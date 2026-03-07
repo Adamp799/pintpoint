@@ -178,5 +178,65 @@
     "cheapestPintName": "TBC",
     "lat": 52.2044547,
     "lng": 0.1191328
+  },
+  {
+    "id": "white-horse-milton",
+    "name": "The White Horse",
+    "address": "20–22 High Street, Milton, CB24 6AJ",
+    "description": "CAMRA Community Pub of the Year. Six changing real ales, large beer garden, food and live gigs. Dog-friendly.",
+    "cheapestPint": 4.20,
+    "cheapestPintName": "TBC",
+    "lat": 52.2418,
+    "lng": 0.1615
+  },
+  {
+    "id": "waggon-horses-milton",
+    "name": "Waggon & Horses",
+    "address": "39 High Street, Milton, CB24 6DF",
+    "description": "Village pub with up to five ales from Elgoods and regional brewers. Burgers and wings cooked in-house.",
+    "cheapestPint": 4.35,
+    "cheapestPintName": "TBC",
+    "lat": 52.2422,
+    "lng": 0.1608
+  },
+  {
+    "id": "red-lion-histon",
+    "name": "The Red Lion",
+    "address": "27 High Street, Histon, CB24 9JD",
+    "description": "Traditional pub since 1836. Cambridge CAMRA Pub of the Year. Real ale, food, darts and outside seating.",
+    "cheapestPint": 4.25,
+    "cheapestPintName": "TBC",
+    "lat": 52.2516,
+    "lng": 0.1064
+  },
+  {
+    "id": "boot-histon",
+    "name": "The Boot",
+    "address": "2 High Street, Histon, CB24 9JD",
+    "description": "Award-winning gastro pub opposite the village green. Cosy bar with fireplace, garden and terrace.",
+    "cheapestPint": 4.95,
+    "cheapestPintName": "TBC",
+    "lat": 52.2512,
+    "lng": 0.1072
+  },
+  {
+    "id": "kings-head-impington",
+    "name": "The King's Head",
+    "address": "32 High Street, Impington, CB24 9NP",
+    "description": "Village local between Histon and Cambridge. Real ales, pub food and a relaxed atmosphere.",
+    "cheapestPint": 4.30,
+    "cheapestPintName": "TBC",
+    "lat": 52.2482,
+    "lng": 0.1125
+  },
+  {
+    "id": "george-girton",
+    "name": "The George",
+    "address": "71 High Street, Girton, CB3 0QD",
+    "description": "Village pub with traditional and Thai food. Cafe by day, pub by evening. Beer garden and sports TV.",
+    "cheapestPint": 4.40,
+    "cheapestPintName": "TBC",
+    "lat": 52.2329,
+    "lng": 0.0845
   }
 ]
