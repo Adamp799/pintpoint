@@ -4,11 +4,8 @@
 
 const CAMBRIDGE_CENTRE = [52.2053, 0.1218];
 
-// Inline pound coin SVG as data URI so it always loads (no path/base URL issues)
-const POUND_COIN_IMG = (() => {
-  const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><defs><linearGradient id="cs" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#e8c547"/><stop offset="50%" stop-color="#d4a84b"/><stop offset="100%" stop-color="#b8923d"/></linearGradient></defs><circle cx="16" cy="16" r="14" fill="url(#cs)" stroke="#a67c2e" stroke-width="1"/><text x="16" y="21" font-family="Georgia,serif" font-size="16" font-weight="bold" fill="#6b4d1f" text-anchor="middle">&#163;</text></svg>';
-  return 'data:image/svg+xml,' + encodeURIComponent(svg);
-})();
+// Realistic pound coin image from Wikimedia, used in popups
+const POUND_COIN_IMG = 'https://upload.wikimedia.org/wikipedia/en/c/c0/British_12_sided_pound_coin.png';
 const MAP_ZOOM = 14;
 
 let map = null;
@@ -26,7 +23,7 @@ function renderPopups() {
 
     marker.leaflet.bindPopup(`
       <div class="popup-name">${escapeHtml(pub.name)}</div>
-      <div class="popup-price" title="Cheapest pint"><img src="${POUND_COIN_IMG}" alt="" class="popup-coin-icon" /> ${escapeHtml(pub.cheapestPintName || 'TBC')} – ${formatPrice(pub.cheapestPint)}</div>
+      <div class="popup-price" title="Cheapest pint">${escapeHtml(pub.cheapestPintName || 'TBC')} – ${formatPrice(pub.cheapestPint)}<img src="${POUND_COIN_IMG}" alt="" class="popup-coin-icon" /></div>
       <div class="popup-address">${escapeHtml(pub.address)}</div>
       <p class="popup-desc">${escapeHtml(pub.description)}</p>
     `, {
