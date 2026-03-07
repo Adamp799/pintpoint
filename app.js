@@ -24,7 +24,7 @@ function renderPopups() {
     marker.leaflet.bindPopup(`
       <div class="popup-name">${escapeHtml(pub.name)}</div>
       <div class="popup-price" title="Cheapest pint">${escapeHtml(pub.cheapestPintName || 'TBC')} – ${formatPrice(pub.cheapestPint)}<img src="${POUND_COIN_IMG}" alt="" class="popup-coin-icon" /></div>
-      <div class="popup-address">${escapeHtml(pub.address)}</div>
+      <div class="popup-address-row"><span class="popup-address">${escapeHtml(pub.address)}</span> <a href="${googleMapsUrl(pub.address)}" target="_blank" rel="noopener noreferrer" class="popup-maps-link" title="Open in Google Maps" aria-label="Open address in Google Maps">${MAPS_LINK_ICON}</a></div>
       <p class="popup-desc">${escapeHtml(pub.description)}</p>
     `, {
       maxWidth: 320,
@@ -40,6 +40,13 @@ function escapeHtml(text) {
   div.textContent = text;
   return div.innerHTML;
 }
+
+function googleMapsUrl(address) {
+  return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(address);
+}
+
+// Small map pin icon for "open in Google Maps" links
+const MAPS_LINK_ICON = '<svg class="maps-link-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>';
 
 function buildMap() {
   map = L.map('map', {
@@ -78,15 +85,24 @@ function updateCheapestCallout() {
   const nameEl = document.getElementById('cheapest-pub-name');
   const priceEl = document.getElementById('cheapest-pub-price');
   const pintNameEl = document.getElementById('cheapest-pub-pint-name');
+  const addressEl = document.getElementById('cheapest-pub-address');
+  const mapsLinkEl = document.getElementById('cheapest-pub-maps-link');
   if (!nameEl || !priceEl) return;
   if (cheapest) {
     nameEl.textContent = cheapest.name;
     priceEl.textContent = formatPrice(cheapest.cheapestPint);
     if (pintNameEl) pintNameEl.textContent = cheapest.cheapestPintName || 'TBC';
+    if (addressEl) addressEl.textContent = cheapest.address || '';
+    if (mapsLinkEl) {
+      mapsLinkEl.href = googleMapsUrl(cheapest.address || '');
+      mapsLinkEl.style.display = cheapest.address ? '' : 'none';
+    }
   } else {
     nameEl.textContent = '—';
     priceEl.textContent = '—';
     if (pintNameEl) pintNameEl.textContent = '';
+    if (addressEl) addressEl.textContent = '';
+    if (mapsLinkEl) mapsLinkEl.style.display = 'none';
   }
 }
 
@@ -103,7 +119,7 @@ function renderPubList(filteredPubs) {
     <article class="pub-card" data-pub-id="${escapeHtml(pub.id)}" role="listitem" tabindex="0">
       <h3 class="pub-card-name">${escapeHtml(pub.name)}</h3>
       <p class="pub-card-price">${formatPrice(pub.cheapestPint)} <span class="pub-card-pint-name">${escapeHtml(pub.cheapestPintName || 'TBC')}</span></p>
-      <p class="pub-card-address">${escapeHtml(pub.address)}</p>
+      <p class="pub-card-address"><span>${escapeHtml(pub.address)}</span> <a href="${googleMapsUrl(pub.address)}" target="_blank" rel="noopener noreferrer" class="pub-card-maps-link" title="Open in Google Maps" aria-label="Open address in Google Maps" onclick="event.stopPropagation()">${MAPS_LINK_ICON}</a></p>
     </article>
   `).join('');
 

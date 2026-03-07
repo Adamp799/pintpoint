@@ -212,8 +212,42 @@ body {
 .cheapest-pint-name {
   display: block;
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: rgba(0, 0, 0, 0.7);
   margin-top: 0.1rem;
+}
+
+.cheapest-address-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.cheapest-address-row span:first-child {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.cheapest-maps-link {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.85);
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+.cheapest-maps-link:hover {
+  opacity: 1;
+  color: #1a1510;
+}
+
+.cheapest-maps-link .maps-link-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 .cheapest-price {
@@ -304,9 +338,36 @@ body {
 }
 
 .pub-card-address {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
   font-size: 0.8rem;
   color: var(--text-muted);
   margin: 0.2rem 0 0;
+  flex-wrap: wrap;
+}
+
+.pub-card-address span {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pub-card-maps-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.pub-card-maps-link:hover {
+  opacity: 1;
+}
+
+.pub-card-maps-link .maps-link-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 
 .pub-list-empty {
@@ -378,10 +439,35 @@ body {
   flex-shrink: 0;
 }
 
+.popup-address-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0 0.5rem;
+  flex-wrap: wrap;
+}
+
 .popup-address {
   font-size: 0.85rem;
   color: var(--text-muted);
-  margin: 0 0 0.5rem;
+}
+
+.popup-maps-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  opacity: 0.9;
+  flex-shrink: 0;
+}
+
+.popup-maps-link:hover {
+  opacity: 1;
+}
+
+.popup-maps-link .maps-link-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 
 .popup-desc {
