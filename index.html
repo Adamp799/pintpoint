@@ -12,9 +12,15 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="app">
+  <div class="app" id="app">
+    <button type="button" class="mobile-view-toggle mobile-view-toggle--list" id="mobile-toggle-list" aria-label="Switch to pub list">
+      Switch to Pub-list
+    </button>
     <aside class="sidebar">
       <header class="sidebar-header">
+        <button type="button" class="mobile-view-toggle mobile-view-toggle--map" id="mobile-toggle-map" aria-label="Back to map">
+          ← Back to Map
+        </button>
         <h1 class="brand">
           <svg class="brand-logo" viewBox="0 0 24 32" width="28" height="36" aria-hidden="true">
             <!-- Pint glass: tapered sides, rim, base -->

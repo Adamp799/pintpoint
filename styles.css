@@ -35,6 +35,59 @@ body {
   overflow: hidden;
 }
 
+/* Mobile view toggle buttons – hidden on desktop */
+.mobile-view-toggle {
+  display: none;
+}
+
+.mobile-view-toggle--map {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.mobile-view-toggle--map:hover {
+  background: rgba(201, 162, 39, 0.15);
+}
+
+@media (max-width: 768px) {
+  .mobile-view-toggle--list {
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    z-index: 5;
+    padding: 0.85rem 1.25rem;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--bg-sidebar);
+    background: var(--accent);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+
+  .mobile-view-toggle--list:hover {
+    filter: brightness(1.08);
+  }
+
+  .mobile-view-toggle--list:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.5);
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -58,7 +111,37 @@ body {
 @media (max-width: 768px) {
   .app {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+  }
+
+  .app .sidebar {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    max-height: none;
+    flex: 1 1 auto;
+  }
+
+  .app.app--list-view .sidebar {
+    display: flex;
+  }
+
+  .app.app--list-view .map-container {
+    display: none;
+  }
+
+  .app.app--list-view .mobile-view-toggle--list {
+    display: none;
+  }
+
+  .mobile-view-toggle--map {
+    display: none;
+  }
+
+  .app.app--list-view .mobile-view-toggle--map {
+    display: block;
   }
 }
 
@@ -75,8 +158,7 @@ body {
 @media (max-width: 768px) {
   .sidebar {
     border-right: none;
-    border-bottom: 1px solid var(--border);
-    max-height: 45vh;
+    border-bottom: none;
   }
 }
 

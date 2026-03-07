@@ -138,6 +138,12 @@ function focusPub(pubId) {
   const pub = pubs.find((p) => p.id === pubId);
   if (!pub || !map) return;
 
+  // On mobile list view, switch to map first
+  const app = document.getElementById('app');
+  if (app?.classList.contains('app--list-view') && window.matchMedia('(max-width: 768px)').matches) {
+    app.classList.remove('app--list-view');
+  }
+
   map.setView([pub.lat, pub.lng], Math.max(map.getZoom(), 16), { animate: true });
 
   const marker = markers.find((m) => m.pubId === pubId);
@@ -188,6 +194,15 @@ async function init() {
   document.getElementById('cheapest-callout')?.addEventListener('click', () => {
     const cheapest = getCheapestPub();
     if (cheapest) focusPub(cheapest.id);
+  });
+
+  // Mobile view toggle
+  const app = document.getElementById('app');
+  document.getElementById('mobile-toggle-list')?.addEventListener('click', () => {
+    app?.classList.add('app--list-view');
+  });
+  document.getElementById('mobile-toggle-map')?.addEventListener('click', () => {
+    app?.classList.remove('app--list-view');
   });
 }
 
