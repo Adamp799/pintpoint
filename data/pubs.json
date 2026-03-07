@@ -1,0 +1,164 @@
+[
+  {
+    "id": "eagle",
+    "name": "The Eagle",
+    "address": "8 Benet Street, CB2 3QN",
+    "description": "Historic pub where Watson and Crick discussed the structure of DNA. Cosy panelled rooms and a famous RAF bar.",
+    "cheapestPint": 4.20,
+    "lat": 52.2052,
+    "lng": 0.1189
+  },
+  {
+    "id": "mill",
+    "name": "The Mill",
+    "address": "14 Mill Lane, CB2 1RX",
+    "description": "Riverside pub by the Cam with a large terrace. Popular with students and punters.",
+    "cheapestPint": 4.95,
+    "lat": 52.2021,
+    "lng": 0.1142
+  },
+  {
+    "id": "pickerel",
+    "name": "The Pickerel Inn",
+    "address": "30 Magdalene Street, CB3 0AE",
+    "description": "One of Cambridge's oldest pubs. Cosy fireside seating and a relaxed atmosphere.",
+    "cheapestPint": 3.90,
+    "lat": 52.2098,
+    "lng": 0.1172
+  },
+  {
+    "id": "fort-st-george",
+    "name": "Fort St George",
+    "address": "Midsummer Common, CB4 1HA",
+    "description": "Riverside pub on Midsummer Common with great views of the Cam and punting.",
+    "cheapestPint": 5.20,
+    "lat": 52.2124,
+    "lng": 0.1245
+  },
+  {
+    "id": "anchor",
+    "name": "The Anchor",
+    "address": "Silver Street, CB3 9EL",
+    "description": "Waterfront pub on Silver Street with a large terrace. Perfect for a pint by the river.",
+    "cheapestPint": 5.50,
+    "lat": 52.2034,
+    "lng": 0.1148
+  },
+  {
+    "id": "alexandra-arms",
+    "name": "The Alexandra Arms",
+    "address": "20 Gwydir Street, CB1 2LG",
+    "description": "CAMRA Good Beer Guide regular. Real ale focus and a friendly local vibe.",
+    "cheapestPint": 3.70,
+    "lat": 52.2048,
+    "lng": 0.1312
+  },
+  {
+    "id": "elm-tree",
+    "name": "Elm Tree",
+    "address": "16 Orchard Street, CB1 1JT",
+    "description": "Tiny backstreet pub with an impressive rotating selection of real ales and ciders.",
+    "cheapestPint": 3.85,
+    "lat": 52.2076,
+    "lng": 0.1289
+  },
+  {
+    "id": "baron-of-beef",
+    "name": "Baron of Beef",
+    "address": "19 Bridge Street, CB2 1UF",
+    "description": "Traditional pub near the river with a good range of ales and pub food.",
+    "cheapestPint": 4.45,
+    "lat": 52.2067,
+    "lng": 0.1167
+  },
+  {
+    "id": "cambridge-blue",
+    "name": "The Cambridge Blue",
+    "address": "85–87 Gwydir Street, CB1 2LG",
+    "description": "Multi-room pub with a huge beer garden. Extensive ale and cider list.",
+    "cheapestPint": 3.95,
+    "lat": 52.2061,
+    "lng": 0.1345
+  },
+  {
+    "id": "free-press",
+    "name": "The Free Press",
+    "address": "7 Prospect Row, CB1 1DU",
+    "description": "Small, no-nonsense pub with a loyal following. No music, no fruit machines.",
+    "cheapestPint": 3.65,
+    "lat": 52.2089,
+    "lng": 0.1256
+  },
+  {
+    "id": "granta",
+    "name": "The Granta",
+    "address": "14 Newnham Road, CB3 9EX",
+    "description": "Riverside pub with a terrace overlooking the mill pond. Popular for summer drinks.",
+    "cheapestPint": 5.75,
+    "lat": 52.2001,
+    "lng": 0.1089
+  },
+  {
+    "id": "haymakers",
+    "name": "The Haymakers",
+    "address": "54 High Street, Chesterton, CB4 1NG",
+    "description": "Community pub in Chesterton with real ales and a welcoming atmosphere.",
+    "cheapestPint": 4.10,
+    "lat": 52.2156,
+    "lng": 0.1323
+  },
+  {
+    "id": "mitre",
+    "name": "The Mitre",
+    "address": "17 Bridge Street, CB2 1UF",
+    "description": "Historic pub on Bridge Street with wood-panelled interior and a solid ale selection.",
+    "cheapestPint": 4.80,
+    "lat": 52.2062,
+    "lng": 0.1156
+  },
+  {
+    "id": "panton-arms",
+    "name": "The Panton Arms",
+    "address": "43 Panton Street, CB2 1HL",
+    "description": "Corner pub near the market. Good for a quick pint and people-watching.",
+    "cheapestPint": 4.35,
+    "lat": 52.2045,
+    "lng": 0.1201
+  },
+  {
+    "id": "pint-shop",
+    "name": "The Pint Shop",
+    "address": "10 Peas Hill, CB2 3PN",
+    "description": "Craft beer and grill house in a central location. Wide selection of keg and cask.",
+    "cheapestPint": 5.25,
+    "lat": 52.2056,
+    "lng": 0.1198
+  },
+  {
+    "id": "royal-standard",
+    "name": "The Royal Standard",
+    "address": "2 Mill Road, CB1 2AD",
+    "description": "Unpretentious local on Mill Road with a mixed crowd and regular events.",
+    "cheapestPint": 3.55,
+    "lat": 52.2034,
+    "lng": 0.1367
+  },
+  {
+    "id": "blue-moon",
+    "name": "The Blue Moon",
+    "address": "2 Norfolk Street, CB1 2LF",
+    "description": "Small pub with a focus on real ale and live music. LGBTQ+ friendly.",
+    "cheapestPint": 4.15,
+    "lat": 52.2041,
+    "lng": 0.1298
+  },
+  {
+    "id": "brewtap",
+    "name": "BrewBoard Taproom",
+    "address": "2 Wheeler Street, CB2 3QJ",
+    "description": "Taproom for local BrewBoard brewery. Fresh cask and keg in the heart of town.",
+    "cheapestPint": 4.90,
+    "lat": 52.2049,
+    "lng": 0.1212
+  }
+]
