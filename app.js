@@ -168,6 +168,11 @@ async function init() {
   document.getElementById('search')?.addEventListener('input', applySortAndFilter);
   document.getElementById('search')?.addEventListener('search', applySortAndFilter);
   document.getElementById('sort')?.addEventListener('change', applySortAndFilter);
+
+  document.getElementById('cheapest-callout')?.addEventListener('click', () => {
+    const cheapest = getCheapestPub();
+    if (cheapest) focusPub(cheapest.id);
+  });
 }
 
 init();

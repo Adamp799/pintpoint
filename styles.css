@@ -155,12 +155,30 @@ body {
 }
 
 .cheapest-callout {
-  margin: 0 1.25rem 1rem;
+  display: block;
+  width: 100%;
+  margin: 0 0 0.6rem;
   padding: 0.85rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid rgba(201, 162, 39, 0.5);
+  font: inherit;
   background: linear-gradient(135deg, var(--accent-dim) 0%, var(--accent) 100%);
   color: var(--bg-sidebar);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cheapest-callout:hover {
+  border-color: rgba(201, 162, 39, 0.9);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cheapest-callout:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.3);
 }
 
 .cheapest-label {
@@ -199,6 +217,7 @@ body {
   overflow-x: hidden;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
+  padding: 0 1rem;
   /* Dark scrollbar – Firefox */
   scrollbar-color: var(--border) var(--bg-sidebar);
   scrollbar-width: thin;
@@ -222,7 +241,7 @@ body {
 }
 
 .pub-list {
-  padding: 0 1rem 1rem;
+  padding: 0 0 1rem;
 }
 
 .pub-card {
