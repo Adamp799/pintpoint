@@ -60,13 +60,15 @@ body {
 
 @media (max-width: 768px) {
   .mobile-view-toggle--list {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     position: absolute;
     top: 1rem;
     left: 1rem;
-    right: 1rem;
+    max-width: calc(100% - 5rem);
     z-index: 1000;
-    padding: 0.85rem 1.25rem;
+    padding: 0.65rem 1rem;
     font: inherit;
     font-size: 1rem;
     font-weight: 600;
@@ -85,6 +87,11 @@ body {
   .mobile-view-toggle--list:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.5);
+  }
+
+  .mobile-view-toggle--list .mobile-toggle-icon {
+    flex-shrink: 0;
+    color: currentColor;
   }
 }
 
