@@ -41,7 +41,10 @@ body {
 }
 
 .mobile-view-toggle--map {
-  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 0.75rem;
   padding: 0.5rem 0.75rem;
   font: inherit;
   font-size: 0.9rem;
@@ -148,7 +151,7 @@ body {
   }
 
   .app.app--list-view .mobile-view-toggle--map {
-    display: block;
+    display: flex;
   }
 }
 
