@@ -62,7 +62,7 @@ body {
   .mobile-view-toggle--list {
     display: block;
     position: absolute;
-    bottom: 1rem;
+    top: 1rem;
     left: 1rem;
     right: 1rem;
     z-index: 1000;
