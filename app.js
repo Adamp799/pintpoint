@@ -20,7 +20,7 @@ function renderPopups() {
 
     marker.leaflet.bindPopup(`
       <div class="popup-name">${escapeHtml(pub.name)}</div>
-      <div class="popup-price">Cheapest pint: ${formatPrice(pub.cheapestPint)}</div>
+      <div class="popup-price">Cheapest pint: ${escapeHtml(pub.cheapestPintName || 'TBC')} – ${formatPrice(pub.cheapestPint)}</div>
       <div class="popup-address">${escapeHtml(pub.address)}</div>
       <p class="popup-desc">${escapeHtml(pub.description)}</p>
     `, {
@@ -72,13 +72,16 @@ function updateCheapestCallout() {
   const cheapest = getCheapestPub();
   const nameEl = document.getElementById('cheapest-pub-name');
   const priceEl = document.getElementById('cheapest-pub-price');
+  const pintNameEl = document.getElementById('cheapest-pub-pint-name');
   if (!nameEl || !priceEl) return;
   if (cheapest) {
     nameEl.textContent = cheapest.name;
     priceEl.textContent = formatPrice(cheapest.cheapestPint);
+    if (pintNameEl) pintNameEl.textContent = cheapest.cheapestPintName || 'TBC';
   } else {
     nameEl.textContent = '—';
     priceEl.textContent = '—';
+    if (pintNameEl) pintNameEl.textContent = '';
   }
 }
 
@@ -94,7 +97,7 @@ function renderPubList(filteredPubs) {
   listEl.innerHTML = filteredPubs.map((pub) => `
     <article class="pub-card" data-pub-id="${escapeHtml(pub.id)}" role="listitem" tabindex="0">
       <h3 class="pub-card-name">${escapeHtml(pub.name)}</h3>
-      <p class="pub-card-price">${formatPrice(pub.cheapestPint)}</p>
+      <p class="pub-card-price">${formatPrice(pub.cheapestPint)} <span class="pub-card-pint-name">${escapeHtml(pub.cheapestPintName || 'TBC')}</span></p>
       <p class="pub-card-address">${escapeHtml(pub.address)}</p>
     </article>
   `).join('');

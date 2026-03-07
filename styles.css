@@ -179,6 +179,13 @@ body {
   margin-top: 0.2rem;
 }
 
+.cheapest-pint-name {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.1rem;
+}
+
 .cheapest-price {
   font-size: 1.25rem;
   font-weight: 700;
@@ -257,6 +264,12 @@ body {
   font-weight: 700;
   color: var(--accent);
   margin: 0.35rem 0 0;
+}
+
+.pub-card-pint-name {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .pub-card-address {
