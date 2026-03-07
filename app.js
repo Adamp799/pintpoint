@@ -31,8 +31,10 @@ function renderPopups() {
       <p class="popup-desc">${escapeHtml(pub.description)}</p>
     `, {
       maxWidth: 320,
-      className: 'pintpoint-popup'
+      className: 'pintpoint-popup',
+      autoPan: false
     });
+    marker.leaflet.on('dblclick', () => focusPub(pub.id));
   });
 }
 
@@ -123,7 +125,7 @@ function focusPub(pubId) {
   const pub = pubs.find((p) => p.id === pubId);
   if (!pub || !map) return;
 
-  map.setView([pub.lat, pub.lng], Math.max(map.getZoom(), 16));
+  map.setView([pub.lat, pub.lng], Math.max(map.getZoom(), 16), { animate: true });
 
   const marker = markers.find((m) => m.pubId === pubId);
   if (marker && marker.leaflet) {
