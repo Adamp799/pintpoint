@@ -6,8 +6,8 @@
     "description": "Historic pub where Watson and Crick discussed the structure of DNA. Cosy panelled rooms and a famous RAF bar.",
     "cheapestPint": 4.20,
     "cheapestPintName": "TBC",
-    "lat": 52.2052,
-    "lng": 0.1189
+    "lat": 52.204066,
+    "lng": 0.1179405
   },
   {
     "id": "mill",
@@ -16,8 +16,8 @@
     "description": "Riverside pub by the Cam with a large terrace. Popular with students and punters.",
     "cheapestPint": 4.95,
     "cheapestPintName": "TBC",
-    "lat": 52.2021,
-    "lng": 0.1142
+    "lat": 52.2014871,
+    "lng": 0.1161778
   },
   {
     "id": "pickerel",
@@ -26,8 +26,8 @@
     "description": "One of Cambridge's oldest pubs. Cosy fireside seating and a relaxed atmosphere.",
     "cheapestPint": 3.90,
     "cheapestPintName": "TBC",
-    "lat": 52.2098,
-    "lng": 0.1172
+    "lat": 52.2099277,
+    "lng": 0.1161966
   },
   {
     "id": "fort-st-george",
@@ -36,8 +36,8 @@
     "description": "Riverside pub on Midsummer Common with great views of the Cam and punting.",
     "cheapestPint": 5.20,
     "cheapestPintName": "TBC",
-    "lat": 52.2124,
-    "lng": 0.1245
+    "lat": 52.2124561,
+    "lng": 0.127804
   },
   {
     "id": "anchor",
@@ -46,8 +46,8 @@
     "description": "Waterfront pub on Silver Street with a large terrace. Perfect for a pint by the river.",
     "cheapestPint": 5.50,
     "cheapestPintName": "TBC",
-    "lat": 52.2034,
-    "lng": 0.1148
+    "lat": 52.2019394,
+    "lng": 0.1157293
   },
   {
     "id": "alexandra-arms",
@@ -56,8 +56,8 @@
     "description": "CAMRA Good Beer Guide regular. Real ale focus and a friendly local vibe.",
     "cheapestPint": 3.70,
     "cheapestPintName": "TBC",
-    "lat": 52.2048,
-    "lng": 0.1312
+    "lat": 52.20386,
+    "lng": 0.1392999
   },
   {
     "id": "elm-tree",
@@ -66,8 +66,8 @@
     "description": "Tiny backstreet pub with an impressive rotating selection of real ales and ciders.",
     "cheapestPint": 3.85,
     "cheapestPintName": "TBC",
-    "lat": 52.2076,
-    "lng": 0.1289
+    "lat": 52.2051547,
+    "lng": 0.1294263
   },
   {
     "id": "baron-of-beef",
@@ -76,8 +76,8 @@
     "description": "Traditional pub near the river with a good range of ales and pub food.",
     "cheapestPint": 4.45,
     "cheapestPintName": "TBC",
-    "lat": 52.2067,
-    "lng": 0.1167
+    "lat": 52.2089164,
+    "lng": 0.1181145
   },
   {
     "id": "cambridge-blue",
@@ -86,8 +86,8 @@
     "description": "Multi-room pub with a huge beer garden. Extensive ale and cider list.",
     "cheapestPint": 3.95,
     "cheapestPintName": "TBC",
-    "lat": 52.2061,
-    "lng": 0.1345
+    "lat": 52.2023787,
+    "lng": 0.1391899
   },
   {
     "id": "free-press",
@@ -96,8 +96,8 @@
     "description": "Small, no-nonsense pub with a loyal following. No music, no fruit machines.",
     "cheapestPint": 3.65,
     "cheapestPintName": "TBC",
-    "lat": 52.2089,
-    "lng": 0.1256
+    "lat": 52.2047799,
+    "lng": 0.1303831
   },
   {
     "id": "granta",
@@ -106,8 +106,8 @@
     "description": "Riverside pub with a terrace overlooking the mill pond. Popular for summer drinks.",
     "cheapestPint": 5.75,
     "cheapestPintName": "TBC",
-    "lat": 52.2001,
-    "lng": 0.1089
+    "lat": 52.1997038,
+    "lng": 0.113848
   },
   {
     "id": "haymakers",
@@ -116,8 +116,8 @@
     "description": "Community pub in Chesterton with real ales and a welcoming atmosphere.",
     "cheapestPint": 4.10,
     "cheapestPintName": "TBC",
-    "lat": 52.2156,
-    "lng": 0.1323
+    "lat": 52.2174507,
+    "lng": 0.1394316
   },
   {
     "id": "mitre",
@@ -126,8 +126,8 @@
     "description": "Historic pub on Bridge Street with wood-panelled interior and a solid ale selection.",
     "cheapestPint": 4.80,
     "cheapestPintName": "TBC",
-    "lat": 52.2062,
-    "lng": 0.1156
+    "lat": 52.2088653,
+    "lng": 0.1182051
   },
   {
     "id": "panton-arms",
@@ -136,8 +136,8 @@
     "description": "Corner pub near the market. Good for a quick pint and people-watching.",
     "cheapestPint": 4.35,
     "cheapestPintName": "TBC",
-    "lat": 52.2045,
-    "lng": 0.1201
+    "lat": 52.1964242,
+    "lng": 0.1249433
   },
   {
     "id": "pint-shop",
@@ -146,8 +146,8 @@
     "description": "Craft beer and grill house in a central location. Wide selection of keg and cask.",
     "cheapestPint": 5.25,
     "cheapestPintName": "TBC",
-    "lat": 52.2056,
-    "lng": 0.1198
+    "lat": 52.2042033,
+    "lng": 0.1191156
   },
   {
     "id": "royal-standard",
@@ -156,8 +156,8 @@
     "description": "Unpretentious local on Mill Road with a mixed crowd and regular events.",
     "cheapestPint": 4.70,
     "cheapestPintName": "Real Ale",
-    "lat": 52.2034,
-    "lng": 0.1367
+    "lat": 52.2015962,
+    "lng": 0.132981
   },
   {
     "id": "blue-moon",
@@ -166,8 +166,8 @@
     "description": "Small pub with a focus on real ale and live music. LGBTQ+ friendly.",
     "cheapestPint": 4.15,
     "cheapestPintName": "TBC",
-    "lat": 52.2041,
-    "lng": 0.1298
+    "lat": 52.204837,
+    "lng": 0.1366245
   },
   {
     "id": "brewtap",
@@ -176,7 +176,7 @@
     "description": "Taproom for local BrewBoard brewery. Fresh cask and keg in the heart of town.",
     "cheapestPint": 4.90,
     "cheapestPintName": "TBC",
-    "lat": 52.2049,
-    "lng": 0.1212
+    "lat": 52.2044547,
+    "lng": 0.1191328
   }
 ]

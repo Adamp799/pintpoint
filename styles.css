@@ -334,6 +334,15 @@ body {
   font-size: 1.35rem;
   font-weight: 700;
   margin: 0 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.popup-coin-icon {
+  height: 1.1em;
+  width: auto;
+  vertical-align: middle;
 }
 
 .popup-address {
