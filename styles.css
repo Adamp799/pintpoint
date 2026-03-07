@@ -41,7 +41,7 @@ body {
 }
 
 .mobile-view-toggle--map {
-  display: flex;
+  display: none;
   align-items: center;
   line-height: 1;
   margin-bottom: 0.75rem;
