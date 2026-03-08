@@ -248,5 +248,15 @@
     "cheapestPintName": "Tiger Copper",
     "lat": 52.2121,
     "lng": 0.1131
+  },
+  {
+    "id": "grapes",
+    "name": "The Grapes",
+    "address": "19 Histon Rd, Arbury, Cambridge CB4 3JB",
+    "description": "Renowned pub with live music, real ales and pool table, plus classic British menu and steak night.",
+    "cheapestPint": 4.70,
+    "cheapestPintName": "Greene King IPA",
+    "lat": 52.2150,
+    "lng": 0.1108
   }
 ]
