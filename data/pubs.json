@@ -94,8 +94,8 @@
     "name": "The Free Press",
     "address": "7 Prospect Row, CB1 1DU",
     "description": "Small, no-nonsense pub with a loyal following. No music, no fruit machines.",
-    "cheapestPint": 3.65,
-    "cheapestPintName": "TBC",
+    "cheapestPint": 4.80,
+    "cheapestPintName": "Greene King IPA",
     "lat": 52.2047799,
     "lng": 0.1303831
   },
@@ -124,8 +124,8 @@
     "name": "The Mitre",
     "address": "17 Bridge Street, CB2 1UF",
     "description": "Historic pub on Bridge Street with wood-panelled interior and a solid ale selection.",
-    "cheapestPint": 4.80,
-    "cheapestPintName": "TBC",
+    "cheapestPint": 6.00,
+    "cheapestPintName": "Nicholson Pale Ale",
     "lat": 52.2088653,
     "lng": 0.1182051
   },
@@ -251,7 +251,7 @@
   },
   {
     "id": "grapes",
-    "name": "The Vapes",
+    "name": "The Grapes",
     "address": "19 Histon Rd, Arbury, Cambridge CB4 3JB",
     "description": "Renowned pub with live music, real ales and pool table, plus classic British menu and steak night.",
     "cheapestPint": 4.70,
@@ -268,5 +268,15 @@
     "cheapestPintName": "Nethergate Suffolk County",
     "lat": 52.2105,
     "lng": 0.1132
+  },
+  {
+    "id": "king-street-run",
+    "name": "King Street Run",
+    "address": "86 King St, Cambridge CB1 1LN",
+    "description": "Friendly pub with wallpapered ceiling, a 3D TV showing live sport and a games room with pool tables.",
+    "cheapestPint": 6.00,
+    "cheapestPintName": "Fosters/Carling",
+    "lat": 52.2072,
+    "lng": 0.1253
   }
 ]
