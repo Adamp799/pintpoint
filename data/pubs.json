@@ -258,5 +258,15 @@
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2150,
     "lng": 0.1108
+  },
+  {
+    "id": "punter",
+    "name": "The Punter",
+    "address": "3 Pound Hill, Cambridge CB3 0AE",
+    "description": "Cosy pub overlooking a secluded garden courtyard, with 1930s-era artwork jumbled about the walls.",
+    "cheapestPint": 5.50,
+    "cheapestPintName": "Nethergate Suffolk County",
+    "lat": 52.2105,
+    "lng": 0.1132
   }
 ]
