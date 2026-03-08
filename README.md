@@ -32,14 +32,9 @@ Then open [http://localhost:3000](http://localhost:3000) (or the port shown by `
 
 ## Deploy (GitHub Action)
 
-When the Vercel Git integration is blocked (e.g. "no git user associated with the commit"), use a Deploy Hook instead of the CLI:
+Deploys via Vercel CLI on every push to `main`. Requires GitHub secrets: `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`. Get these from [vercel.com/account/tokens](https://vercel.com/account/tokens) and `.vercel/project.json` (run `npx vercel link` first).
 
-1. **Create a Deploy Hook** (as the project owner): Vercel Dashboard → Project → Settings → Git → Deploy Hooks. Name it (e.g. "GitHub Actions"), select branch `main`, create, and copy the URL.
-
-2. **Add GitHub secret**: Repo → Settings → Secrets and variables → Actions → New repository secret. Add:
-   - `VERCEL_DEPLOY_HOOK_URL` (the URL from step 1)
-
-3. **Push to `main`** – the workflow triggers the hook; Vercel pulls from Git and deploys. Works for any collaborator.
+The project must be disconnected from Git in Vercel (Settings → Git → Disconnect) so deployments use the token rather than commit-author checks. Any collaborator can push and deploy.
 
 ## Tech
 
