@@ -238,5 +238,15 @@
     "cheapestPintName": "TBC",
     "lat": 52.2329,
     "lng": 0.0845
+  },
+  {
+    "id": "architect",
+    "name": "The Architect",
+    "address": "43 Castle Street, Cambridge, CB3 0AH",
+    "description": "Bleached wood pub and dining room featuring a contemporary feel and large windows.",
+    "cheapestPint": 5.25,
+    "cheapestPintName": "Tiger Copper",
+    "lat": 52.2121,
+    "lng": 0.1131
   }
 ]
