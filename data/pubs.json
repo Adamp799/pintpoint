@@ -288,5 +288,15 @@
     "cheapestPintName": "Amstel",
     "lat": 52.2034,
     "lng": 0.1234
+  },
+  {
+    "id": "town-and-gown",
+    "name": "Town and Gown",
+    "address": "8 Market Passage, Cambridge CB2 3PF",
+    "description": "Charming, airy gastropub serving international fare, plus cocktails & a fringe theatre.",
+    "cheapestPint": 6.05,
+    "cheapestPintName": "Pravha",
+    "lat": 52.2064,
+    "lng": 0.1200
   }
 ]
