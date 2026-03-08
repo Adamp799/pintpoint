@@ -30,6 +30,21 @@ Then open [http://localhost:3000](http://localhost:3000) (or the port shown by `
 
 - **`data/pubs.json`** – List of Cambridge pubs with `name`, `address`, `description`, `cheapestPint` (£), and `lat`/`lng`. Edit this file to add or update pubs and prices.
 
+## Deploy (GitHub Action)
+
+When the Vercel Git integration is blocked, deploy via GitHub Actions using the owner's token:
+
+1. **Get your Vercel credentials** (as the project owner):
+   - **VERCEL_TOKEN**: [Create a token](https://vercel.com/account/tokens)
+   - **VERCEL_ORG_ID** and **VERCEL_PROJECT_ID**: Run `npx vercel link` in the project root, then read `.vercel/project.json`
+
+2. **Add GitHub secrets**: Repo → Settings → Secrets and variables → Actions → New repository secret. Add:
+   - `VERCEL_TOKEN`
+   - `VERCEL_ORG_ID`
+   - `VERCEL_PROJECT_ID`
+
+3. **Push to `main`** – the workflow deploys automatically.
+
 ## Tech
 
 - Vanilla HTML, CSS, and JavaScript
