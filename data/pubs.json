@@ -84,8 +84,8 @@
     "name": "The Cambridge Blue",
     "address": "85–87 Gwydir Street, CB1 2LG",
     "description": "Multi-room pub with a huge beer garden. Extensive ale and cider list.",
-    "cheapestPint": 3.95,
-    "cheapestPintName": "TBC",
+    "cheapestPint": 4.50,
+    "cheapestPintName": "Various real ales",
     "lat": 52.2023787,
     "lng": 0.1391899
   },
