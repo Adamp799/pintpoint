@@ -338,5 +338,15 @@
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2107,
     "lng": 0.1334
+  },
+  {
+    "id": "burleigh-arms",
+    "name": "The Burleigh Arms",
+    "address": "9-11 Newmarket Rd, Cambridge CB5 8EG",
+    "description": "Modern pub with a beer garden offering snacks & meals, plus cask ales & beers from around the world.",
+    "cheapestPint": 6.00,
+    "cheapestPintName": "Rosa Blanca",
+    "lat": 52.2107,
+    "lng": 0.1334
   }
 ]
