@@ -44,8 +44,8 @@
     "name": "The Anchor",
     "address": "Silver Street, CB3 9EL",
     "description": "Waterfront pub on Silver Street with a large terrace. Perfect for a pint by the river.",
-    "cheapestPint": 5.50,
-    "cheapestPintName": "TBC",
+    "cheapestPint": 6.25,
+    "cheapestPintName": "Pravha",
     "lat": 52.2019394,
     "lng": 0.1157293
   },
