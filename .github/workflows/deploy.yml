@@ -15,6 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Neutralize Git Metadata
+        run: rm -rf .git
+
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
 
