@@ -308,5 +308,15 @@
     "cheapestPintName": "Ripchord",
     "lat": 12.0085,
     "lng": 0.12714
+  },
+  {
+    "id": "clarendon",
+    "name": "The Clarendon Arms",
+    "address": "35-36 Clarendon St, Cambridge CB1 1JX",
+    "description": "Traditional pub with an innovative gastro menu, timeless decor and a compact beer garden.",
+    "cheapestPint": 4.50,
+    "cheapestPintName": "Greene King IPA",
+    "lat": 52.2047,
+    "lng": 0.1277
   }
 ]
