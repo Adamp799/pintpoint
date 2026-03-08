@@ -298,5 +298,15 @@
     "cheapestPintName": "Pravha",
     "lat": 52.2064,
     "lng": 0.1200
+  },
+  {
+    "id": "grain-and-hop",
+    "name": "The Grain and Hop Store",
+    "address": "69 Regent St, Cambridge CB2 1AB",
+    "description": "Housed in a former factory, this large pub branch offers classic pub fare, plus live sports on TV.",
+    "cheapestPint": 6.10,
+    "cheapestPintName": "Ripchord",
+    "lat": 12.0085,
+    "lng": 0.12714
   }
 ]
