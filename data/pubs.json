@@ -114,8 +114,8 @@
     "name": "The Haymakers",
     "address": "54 High Street, Chesterton, CB4 1NG",
     "description": "Community pub in Chesterton with real ales and a welcoming atmosphere.",
-    "cheapestPint": 4.10,
-    "cheapestPintName": "TBC",
+    "cheapestPint": 5.30,
+    "cheapestPintName": "Minotaur",
     "lat": 52.2174507,
     "lng": 0.1394316
   },
@@ -268,6 +268,16 @@
     "cheapestPintName": "Nethergate Suffolk County",
     "lat": 52.2105,
     "lng": 0.1132
+  },
+  {
+    "id": "king-street-run",
+    "name": "King Street Run",
+    "address": "86 King St, Cambridge CB1 1LN",
+    "description": "Friendly pub with wallpapered ceiling, a 3D TV showing live sport and a games room with pool tables.",
+    "cheapestPint": 6.00,
+    "cheapestPintName": "Fosters/Carling",
+    "lat": 52.2072,
+    "lng": 0.1253
   },
   {
     "id": "king-street-run",
