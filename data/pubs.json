@@ -318,5 +318,15 @@
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2047,
     "lng": 0.1277
+  },
+  {
+    "id": "brewhouse",
+    "name": "Cambridge Brewhouse",
+    "address": "1 King St, Cambridge CB1 1LH",
+    "description": "Playful eclectic decor pub with micro-brewery, plus home-smoked British tapas and sharing platters.",
+    "cheapestPint": 5.35,
+    "cheapestPintName": "House pale ale",
+    "lat": 52.2074,
+    "lng": 0.1222
   }
 ]
