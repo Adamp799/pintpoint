@@ -280,13 +280,13 @@
     "lng": 0.1253
   },
   {
-    "id": "king-street-run",
-    "name": "King Street Run",
-    "address": "86 King St, Cambridge CB1 1LN",
+    "id": "cambridge-tap",
+    "name": "Cambridge Tap",
+    "address": "32 St Andrew's St, Cambridge CB2 3AR",
     "description": "Friendly pub with wallpapered ceiling, a 3D TV showing live sport and a games room with pool tables.",
-    "cheapestPint": 6.00,
-    "cheapestPintName": "Fosters/Carling",
-    "lat": 52.2072,
-    "lng": 0.1253
+    "cheapestPint": 5.95,
+    "cheapestPintName": "Amstel",
+    "lat": 52.2034,
+    "lng": 0.1234
   }
 ]
