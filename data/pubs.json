@@ -24,8 +24,8 @@
     "name": "The Pickerel Inn",
     "address": "30 Magdalene Street, CB3 0AE",
     "description": "One of Cambridge's oldest pubs. Cosy fireside seating and a relaxed atmosphere.",
-    "cheapestPint": 3.90,
-    "cheapestPintName": "TBC",
+    "cheapestPint": 5.85,
+    "cheapestPintName": "Greene King IPA",
     "lat": 52.2099277,
     "lng": 0.1161966
   },
