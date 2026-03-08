@@ -328,5 +328,15 @@
     "cheapestPintName": "House pale ale",
     "lat": 52.2074,
     "lng": 0.1222
+  },
+  {
+    "id": "champion-of-the-thames",
+    "name": "Champion of the Thames",
+    "address": "68 King St, Cambridge CB1 1LN",
+    "description": "Traditional, no-nonsense watering hole on a street corner serving Greene King ales.",
+    "cheapestPint": 5.40,
+    "cheapestPintName": "Greene King IPA",
+    "lat": 52.2107,
+    "lng": 0.1334
   }
 ]
