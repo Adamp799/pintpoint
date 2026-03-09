@@ -418,5 +418,15 @@
     "cheapestPintName": "Tiger",
     "lat": 52.2046,
     "lng": 0.1328
+  },
+  {
+    "id": "earl-of-derby",
+    "name": "The Earl of Derby",
+    "address": "129 Hills Rd, Cambridge CB2 1PG",
+    "description": "Offering fresh and traditional home cooked fair and pub food, they are famous for their substantial Full English Breakfast",
+    "cheapestPint": 5.00,
+    "cheapestPintName": "XPA",
+    "lat": 52.1921,
+    "lng": 0.1341
   }
 ]
