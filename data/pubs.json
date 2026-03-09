@@ -458,5 +458,15 @@
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2029,
     "lng": 0.1239
+  },
+  {
+    "id": "six-bells",
+    "name": "The Six Bells",
+    "address": "11 Covent Garden, Petersfield, Cambridge CB1 2HS",
+    "description": "Traditional wood-panelled pub with patio garden offering real ales, food and some live music.",
+    "cheapestPint": 4.50,
+    "cheapestPintName": "Greene King IPA",
+    "lat": 52.2004,
+    "lng": 0.1344
   }
 ]
