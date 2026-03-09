@@ -48,6 +48,21 @@ function googleMapsUrl(address) {
 // Small map pin icon for "open in Google Maps" links
 const MAPS_LINK_ICON = '<svg class="maps-link-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>';
 
+// Pint glass icon used for all pub markers on the map
+const PINT_ICON = L.divIcon({
+  html: `
+    <svg class="map-pint-icon" viewBox="0 0 24 32" width="28" height="36" aria-hidden="true">
+      <path fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" d="M6 2h12l-1.5 26H7.5L6 2z"/>
+      <path fill="currentColor" d="M7 6h10v16c0 2-2 4-5 4s-5-2-5-4V6z" opacity="0.5"/>
+      <path fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity="0.9" d="M7 6h10"/>
+    </svg>
+  `,
+  className: 'pint-marker',
+  iconSize: [28, 36],
+  iconAnchor: [14, 36],
+  popupAnchor: [0, -36]
+});
+
 function buildMap() {
   map = L.map('map', {
     center: CAMBRIDGE_CENTRE,
@@ -65,7 +80,8 @@ function buildMap() {
 
   pubs.forEach((pub) => {
     const marker = L.marker([pub.lat, pub.lng], {
-      alt: pub.name
+      alt: pub.name,
+      icon: PINT_ICON
     });
     marker.pubId = pub.id;
     marker.addTo(map);
