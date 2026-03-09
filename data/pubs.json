@@ -368,5 +368,15 @@
     "cheapestPintName": "Session IPA",
     "lat": 52.2038914,
     "lng": 0.1184581
+  },
+  {
+    "id": "duke-of-cambridge",
+    "name": "The Duke of Cambridge",
+    "address": "176 East Rd, Cambridge CB1 1BG",
+    "description": "Everyday pub plates and draft beer provided in a warm, relaxed environment with outdoor seating.",
+    "cheapestPint": 5.50,
+    "cheapestPintName": "Amstel",
+    "lat": 52.204961,
+    "lng": 0.133426
   }
 ]
