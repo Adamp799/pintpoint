@@ -404,8 +404,8 @@
     "name": "The Live and Let Live",
     "address": "40 Mawson Rd, Cambridge CB1 2EA",
     "description": "Lively pub with a rustic vibe, with a large choice of real ales and traditional bar food.",
-    "cheapestPint": 7.30,
-    "cheapestPintName": "Estrella",
+    "cheapestPint": 5.60,
+    "cheapestPintName": "Citra",
     "lat": 52.1993,
     "lng": 0.1351
   }
