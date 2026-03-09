@@ -388,5 +388,15 @@
     "cheapestPintName": "Fosters",
     "lat": 52.2095,
     "lng": 0.1434
+  },
+  {
+    "id": "tivoli",
+    "name": "The Tivoli",
+    "address": "16 Chesterton Rd, Cambridge CB4 3AX",
+    "description": "Housed in an elegant old cinema, this bustling venue serves-up British pub food and real ales.",
+    "cheapestPint": 7.30,
+    "cheapestPintName": "Estrella",
+    "lat": 52.2138,
+    "lng": 0.1237
   }
 ]
