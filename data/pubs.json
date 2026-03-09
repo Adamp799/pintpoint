@@ -348,5 +348,15 @@
     "cheapestPintName": "Rosa Blanca",
     "lat": 52.2082,
     "lng": 0.1328
+  },
+  {
+    "id": "brook",
+    "name": "The Brook",
+    "address": "25 Brookfields, Mill Rd, Cambridge CB1 3NW",
+    "description": "Homey hangout offering pub grub, live music & karaoke nights in a casual setting with a beer garden.",
+    "cheapestPint": 5.00,
+    "cheapestPintName": "Carlsberg",
+    "lat": 52.1961,
+    "lng": 0.1554
   }
 ]
