@@ -408,5 +408,15 @@
     "cheapestPintName": "Citra",
     "lat": 52.1993,
     "lng": 0.1351
+  },
+  {
+    "id": "tram-depot",
+    "name": "The Tram Depot",
+    "address": "5 Dover St, Cambridge CB1 1DY",
+    "description": "A pub steeped in history - originally the stables for Cambridge Street Tramways who operated a horse-drawn tramway service from 1880 to 1914.",
+    "cheapestPint": 4.95,
+    "cheapestPintName": "Tiger",
+    "lat": 52.2046,
+    "lng": 0.1328
   }
 ]
