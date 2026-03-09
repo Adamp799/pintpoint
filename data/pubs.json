@@ -358,5 +358,15 @@
     "cheapestPintName": "Carlsberg",
     "lat": 52.1961,
     "lng": 0.1554
+  },
+  {
+    "id": "smokeworks",
+    "name": "Smokeworks",
+    "address": "2 Free School Ln, Cambridge CB2 3QA",
+    "description": "Bright, industrial diner with neon lights, for barbecue ribs and chicken, plus beers and shakes.",
+    "cheapestPint": 6.25,
+    "cheapestPintName": "Session IPA",
+    "lat": 52.2038914,
+    "lng": 0.1184581
   }
 ]
