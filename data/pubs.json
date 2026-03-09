@@ -438,5 +438,15 @@
     "cheapestPintName": "Nene Valley",
     "lat": 52.1991,
     "lng": 0.1473
+  },
+  {
+    "id": "red-bull",
+    "name": "The Red Bull",
+    "address": "11 Barton Rd, Cambridge CB3 9JZ",
+    "description": "Family-friendly pub-restaurant offering pub grub and pizza, TV with live sport and patio seating.",
+    "cheapestPint": 6.00,
+    "cheapestPintName": "Anchorman",
+    "lat": 52.1965,
+    "lng": 0.1087
   }
 ]
