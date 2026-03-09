@@ -104,10 +104,10 @@
     "name": "The Granta",
     "address": "14 Newnham Road, CB3 9EX",
     "description": "Riverside pub with a terrace overlooking the mill pond. Popular for summer drinks.",
-    "cheapestPint": 5.75,
-    "cheapestPintName": "TBC",
-    "lat": 52.1997038,
-    "lng": 0.113848
+    "cheapestPint": 5.90,
+    "cheapestPintName": "Granta Bitter",
+    "lat": 52.1997,
+    "lng": 0.1138
   },
   {
     "id": "haymakers",
