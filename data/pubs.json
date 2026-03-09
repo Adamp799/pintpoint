@@ -428,5 +428,15 @@
     "cheapestPintName": "XPA",
     "lat": 52.1921,
     "lng": 0.1341
+  },
+  {
+    "id": "empress",
+    "name": "The Empress",
+    "address": "72 Thoday St, Cambridge CB1 3AX",
+    "description": "This old-fashioned pub with garden and resident pig offers a large choice of real ales and whiskies.",
+    "cheapestPint": 5.30,
+    "cheapestPintName": "Nene Valley",
+    "lat": 52.1991,
+    "lng": 0.1473
   }
 ]
