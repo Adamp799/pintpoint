@@ -378,5 +378,15 @@
     "cheapestPintName": "Amstel",
     "lat": 52.204961,
     "lng": 0.133426
+  },
+  {
+    "id": "corner-house",
+    "name": "The Corner House",
+    "address": "231 Newmarket Rd, Cambridge CB5 8JE",
+    "description": "Pub featuring a beer garden & green space, serving a wide menu of food & drink.",
+    "cheapestPint": 4.90,
+    "cheapestPintName": "Fosters",
+    "lat": 52.2095,
+    "lng": 0.1434
   }
 ]
