@@ -448,5 +448,15 @@
     "cheapestPintName": "Anchorman",
     "lat": 52.1965,
     "lng": 0.1087
+  },
+  {
+    "id": "the-regal",
+    "name": "The Regal",
+    "address": "38-39 St Andrew's St, Cambridge CB2 3AR",
+    "description": "Still resembling a cinema, this Wetherspoon pub offers cheap beer and regular meal deals.",
+    "cheapestPint": 1.99,
+    "cheapestPintName": "Greene King IPA",
+    "lat": 52.2029,
+    "lng": 0.1239
   }
 ]
