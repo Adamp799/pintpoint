@@ -548,5 +548,15 @@
     "cheapestPintName": "Southwold Bitter",
     "lat": 52.2055,
     "lng": 0.1400
+  },
+  {
+    "id": "milton-arms",
+    "name": "The Milton Arms",
+    "address": "205 Milton Rd, Cambridge CB4 1XG",
+    "description": "A family-friendly pub restaurant perched on the picturesque outskirts of Cambridge.",
+    "cheapestPint": 4.20,
+    "cheapestPintName": "Carlsberg",
+    "lat": 52.2228,
+    "lng": 0.1365
   }
 ]
