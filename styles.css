@@ -204,6 +204,27 @@ body {
   color: var(--text-muted);
 }
 
+.about-button {
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.about-button:hover {
+  background: rgba(201, 162, 39, 0.12);
+}
+
+.about-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.5);
+}
+
 .search-section {
   padding: 1rem 1.25rem;
   flex-shrink: 0;
@@ -575,5 +596,69 @@ body {
 
 .leaflet-marker-icon.pint-marker .map-pint-icon {
   display: block;
+  color: var(--accent);
+}
+
+/* About overlay */
+.about-overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2000;
+}
+
+.about-overlay.is-visible {
+  display: flex;
+}
+
+.about-dialog {
+  max-width: 640px;
+  max-height: 80vh;
+  width: calc(100% - 2rem);
+  background: var(--bg-sidebar);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  padding: 1.5rem 1.75rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.about-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.about-body p {
+  margin: 0 0 0.85rem;
+}
+
+.about-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.9rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.about-close:hover {
   color: var(--accent);
 }

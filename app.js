@@ -190,6 +190,24 @@ function applySortAndFilter() {
 }
 
 async function init() {
+  const aboutOverlay = document.getElementById('about-overlay');
+  const aboutButton = document.getElementById('about-button');
+  const aboutClose = document.getElementById('about-close');
+
+  aboutButton?.addEventListener('click', () => {
+    if (aboutOverlay) {
+      aboutOverlay.classList.add('is-visible');
+      aboutOverlay.setAttribute('aria-hidden', 'false');
+    }
+  });
+
+  aboutClose?.addEventListener('click', () => {
+    if (aboutOverlay) {
+      aboutOverlay.classList.remove('is-visible');
+      aboutOverlay.setAttribute('aria-hidden', 'true');
+    }
+  });
+
   try {
     const res = await fetch('data/pubs.json');
     if (!res.ok) throw new Error('Failed to load pubs');

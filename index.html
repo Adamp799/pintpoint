@@ -38,6 +38,7 @@
           <span class="brand-text">PintPoint</span>
         </h1>
         <p class="tagline">Find the cheapest pint in Cambridge</p>
+        <button type="button" class="about-button" id="about-button">About PintPoint</button>
       </header>
 
       <div class="search-section">
@@ -70,6 +71,21 @@
     <main class="map-container">
       <div id="map" class="map" aria-label="Map of Cambridge pubs"></div>
     </main>
+  </div>
+
+  <div class="about-overlay" id="about-overlay" aria-hidden="true">
+    <div class="about-dialog" role="dialog" aria-modal="true" aria-labelledby="about-title">
+      <button type="button" class="about-close" id="about-close" aria-label="Close about page">×</button>
+      <h2 class="about-title" id="about-title">About PintPoint</h2>
+      <div class="about-body">
+        <p>
+          This is placeholder about text for PintPoint. Replace this section with your own description of why you built the site, how the data is collected, or anything else you’d like visitors to know.
+        </p>
+        <p>
+          You can paste any content you like here (for example, the first page of a book you own the rights to, or your own custom copy) by editing the <code>.about-body</code> content in <code>index.html</code>.
+        </p>
+      </div>
+    </div>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
