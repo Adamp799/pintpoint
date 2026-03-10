@@ -468,5 +468,25 @@
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2004,
     "lng": 0.1344
+  },
+  {
+    "id": "green-dragon",
+    "name": "The Green Dragon",
+    "address": "5 Water St, Chesterton, Cambridge CB4 1NZ",
+    "description": "Hung with flower baskets, this old-world inn with a riverside garden serves real ales and pub grub.",
+    "cheapestPint": 5.15,
+    "cheapestPintName": "Greene King IPA",
+    "lat": 52.2179,
+    "lng": 0.1455
+  },
+  {
+    "id": "ticket-office",
+    "name": "The Old Ticket Office",
+    "address": "Unit 1, Cambridge Railway Station, Cambridge CB1 2JW",
+    "description": "A magnificent pub at Cambridge railway station offering a range of craft beers, ciders, wines, and spirits.",
+    "cheapestPint": 5.50,
+    "cheapestPintName": "Young's Original",
+    "lat": 52.194727,
+    "lng": 0.137681
   }
 ]
