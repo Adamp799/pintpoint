@@ -508,5 +508,15 @@
     "cheapestPintName": "Greene King IPA",
     "lat": 52.213410,
     "lng": 0.112016
+  },
+  {
+    "id": "prince-regent",
+    "name": "The Prince Regent",
+    "address": "91 Regent St, Cambridge CB2 1AW",
+    "description": "Traditional tavern serving pub standbys such as burgers and roasts in modern-meets-traditional digs.",
+    "cheapestPint": 5.70,
+    "cheapestPintName": "Amstel",
+    "lat": 52.2000,
+    "lng": 0.1270
   }
 ]
