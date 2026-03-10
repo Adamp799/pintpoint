@@ -133,9 +133,9 @@
     "id": "panton-arms",
     "name": "The Panton Arms",
     "address": "43 Panton Street, CB2 1HL",
-    "description": "Corner pub near the market. Good for a quick pint and people-watching.",
-    "cheapestPint": 4.35,
-    "cheapestPintName": "TBC",
+    "description": "Often frequented by scientists from the Engineering and Chemistry Department of the University of Cambridge.",
+    "cheapestPint": 5.70,
+    "cheapestPintName": "Pravha/Amstel",
     "lat": 52.1964242,
     "lng": 0.1249433
   },
