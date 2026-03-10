@@ -54,10 +54,10 @@
     "name": "The Alexandra Arms",
     "address": "20 Gwydir Street, CB1 2LG",
     "description": "CAMRA Good Beer Guide regular. Real ale focus and a friendly local vibe.",
-    "cheapestPint": 3.70,
-    "cheapestPintName": "TBC",
-    "lat": 52.20386,
-    "lng": 0.1392999
+    "cheapestPint": 5.50,
+    "cheapestPintName": "Various Ales",
+    "lat": 52.2039,
+    "lng": 0.1394
   },
   {
     "id": "elm-tree",
