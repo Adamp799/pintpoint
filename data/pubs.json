@@ -558,5 +558,15 @@
     "cheapestPintName": "Carlsberg",
     "lat": 52.2228,
     "lng": 0.1365
+  },
+  {
+    "id": "geldart",
+    "name": "The Geldart",
+    "address": "1 Ainsworth St, Cambridge CB1 2PF",
+    "description": "Traditional pub with regular live music, a classic menu and special dishes served on hot rocks.",
+    "cheapestPint": 5.40,
+    "cheapestPintName": "Various Ales",
+    "lat": 52.2036,
+    "lng": 0.1422
   }
 ]
