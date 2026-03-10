@@ -518,5 +518,15 @@
     "cheapestPintName": "Amstel",
     "lat": 52.2000,
     "lng": 0.1270
+  },
+  {
+    "id": "alma",
+    "name": "The Alma",
+    "address": "The Alma, 26 Russell Ct, Cambridge CB2 1HW",
+    "description": "Traditional pub with hardwood floors, old-time beer barrels and memorabilia adorning the walls.",
+    "cheapestPint": 5.00,
+    "cheapestPintName": "Greene King IPA",
+    "lat": 52.1960,
+    "lng": 0.1256
   }
 ]
