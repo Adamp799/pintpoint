@@ -488,5 +488,15 @@
     "cheapestPintName": "Young's Original",
     "lat": 52.194727,
     "lng": 0.137681
+  },
+  {
+    "id": "station-tavern",
+    "name": "The Station Tavern",
+    "address": "2 Station Sq, Cambridge CB1 2GA",
+    "description": "This comfortable restaurant & bar with exposed-brick walls offers a classic English menu & pints.",
+    "cheapestPint": 6.15,
+    "cheapestPintName": "Pravha",
+    "lat": 52.1949,
+    "lng": 0.1377
   }
 ]
