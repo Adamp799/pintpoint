@@ -528,5 +528,15 @@
     "cheapestPintName": "Greene King IPA",
     "lat": 52.1960,
     "lng": 0.1256
+  },
+  {
+    "id": "portland",
+    "name": "The Portland Arms",
+    "address": "129 Chesterton Rd, Cambridge CB4 3BA",
+    "description": "Lively pub with real ales and a courtyard garden, plus 200-capacity live music venue.",
+    "cheapestPint": 5.80,
+    "cheapestPintName": "Set List",
+    "lat": 52.2144,
+    "lng": 0.1247
   }
 ]
