@@ -578,5 +578,15 @@
     "cheapestPintName": "Side Pocket for a Toad",
     "lat": 52.2004,
     "lng": 0.1398
+  },
+  {
+    "id": "petersfield",
+    "name": "The Petersfield",
+    "address": "2 Sturton St, Cambridge CB1 2QA",
+    "description": "Low-key, wood-accented pub with a garden offering classic British fare, including Sunday roasts.",
+    "cheapestPint": 5.55,
+    "cheapestPintName": "London Original",
+    "lat": 52.201233,
+    "lng": 0.140678
   }
 ]
