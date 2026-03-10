@@ -538,5 +538,15 @@
     "cheapestPintName": "Set List",
     "lat": 52.2144,
     "lng": 0.1247
+  },
+  {
+    "id": "dobblers",
+    "name": "The Dobblers Inn",
+    "address": "184 Sturton St, Cambridge CB1 2QF",
+    "description": "Pizza and bar snacks, quiz nights and 5 large screens in a simple local boozer with a courtyard.",
+    "cheapestPint": 4.55,
+    "cheapestPintName": "Southwold Bitter",
+    "lat": 52.2055,
+    "lng": 0.1400
   }
 ]
