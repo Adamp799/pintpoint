@@ -598,5 +598,15 @@
     "cheapestPintName": "Various pints",
     "lat": 52.201120,
     "lng": 0.142533
+  },
+  {
+    "id": "devonshire",
+    "name": "The Devonshire Arms",
+    "address": "1 Devonshire Rd, Cambridge CB1 2BH",
+    "description": "Community pub with a wood burner, real ales, cider & a Caribbean fusion menu.",
+    "cheapestPint": 4.90,
+    "cheapestPintName": "Justinian",
+    "lat": 52.198870,
+    "lng": 0.139218
   }
 ]
