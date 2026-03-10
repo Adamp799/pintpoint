@@ -588,5 +588,15 @@
     "cheapestPintName": "London Original",
     "lat": 52.201233,
     "lng": 0.140678
+  },
+  {
+    "id": "caverley",
+    "name": "Caverley's Brewery",
+    "address": "23A Hooper St, Cambridge CB1 2NZ",
+    "description": "Founded by two brothers in 2014, who are intent on brewing a diverse range of beer inspired by the worlds eclectic beer styles.",
+    "cheapestPint": 6.00,
+    "cheapestPintName": "Various pints",
+    "lat": 52.201120,
+    "lng": 0.142533
   }
 ]
