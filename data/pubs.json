@@ -498,5 +498,15 @@
     "cheapestPintName": "Pravha",
     "lat": 52.1949,
     "lng": 0.1377
+  },
+  {
+    "id": "isaac-newton",
+    "name": "Sir Isaac Newton",
+    "address": "84 Castle St, Cambridge CB3 0AJ",
+    "description": "Convivial boozer offering burgers and pub grub, sports events on large screens, darts and pool.",
+    "cheapestPint": 5.10,
+    "cheapestPintName": "Greene King IPA",
+    "lat": 52.213410,
+    "lng": 0.112016
   }
 ]
