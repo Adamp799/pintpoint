@@ -193,6 +193,9 @@ async function init() {
   const aboutOverlay = document.getElementById('about-overlay');
   const aboutButton = document.getElementById('about-button');
   const aboutClose = document.getElementById('about-close');
+  const app = document.getElementById('app');
+  const sidebar = document.querySelector('.sidebar');
+  const sidebarToggle = document.getElementById('sidebar-toggle');
 
   aboutButton?.addEventListener('click', () => {
     if (aboutOverlay) {
@@ -207,6 +210,22 @@ async function init() {
       aboutOverlay.setAttribute('aria-hidden', 'true');
     }
   });
+
+  if (sidebar && sidebarToggle && app) {
+    sidebarToggle.addEventListener('click', () => {
+      const isCollapsed = app.classList.toggle('app--sidebar-collapsed');
+      sidebarToggle.setAttribute('aria-expanded', (!isCollapsed).toString());
+      sidebar.setAttribute('aria-hidden', isCollapsed ? 'true' : 'false');
+      sidebarToggle.textContent = isCollapsed ? '» Show list' : '« Hide list';
+
+      // Let Leaflet know the map container size changed
+      if (map) {
+        setTimeout(() => {
+          map.invalidateSize();
+        }, 0);
+      }
+    });
+  }
 
   try {
     const res = await fetch('data/pubs.json');
@@ -231,12 +250,21 @@ async function init() {
   });
 
   // Mobile view toggle
-  const app = document.getElementById('app');
   document.getElementById('mobile-toggle-list')?.addEventListener('click', () => {
     app?.classList.add('app--list-view');
+    if (map) {
+      setTimeout(() => {
+        map.invalidateSize();
+      }, 0);
+    }
   });
   document.getElementById('mobile-toggle-map')?.addEventListener('click', () => {
     app?.classList.remove('app--list-view');
+    if (map) {
+      setTimeout(() => {
+        map.invalidateSize();
+      }, 0);
+    }
   });
 }
 

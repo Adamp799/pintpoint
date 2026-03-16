@@ -118,11 +118,59 @@ body {
   overflow: hidden;
 }
 
+.app.app--sidebar-collapsed {
+  grid-template-columns: 0 1fr;
+}
+
+.app.app--sidebar-collapsed .sidebar {
+  display: none;
+}
+
+.app.app--sidebar-collapsed .map-container {
+  grid-column: 1 / -1;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 1rem;
+  left: 340px;
+  transform: translateX(-50%);
+  z-index: 1100;
+  padding: 0.45rem 0.75rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--bg-sidebar);
+  background: var(--accent);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  white-space: nowrap;
+}
+
+.sidebar-toggle:hover {
+  filter: brightness(1.05);
+}
+
+.sidebar-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(201, 162, 39, 0.6);
+}
+
+.app.app--sidebar-collapsed .sidebar-toggle {
+  left: 0.75rem;
+  transform: none;
+}
+
 @media (max-width: 768px) {
   .app {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     position: relative;
+  }
+
+  .sidebar-toggle {
+    display: none;
   }
 
   .app .sidebar {
