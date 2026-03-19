@@ -2,6 +2,8 @@
 
 A map of Cambridge pubs with the cost of the cheapest pint at each, plus a sidebar to search and find the cheapest pint in town.
 
+**https://pintpoint.xyz/**
+
 ## Features
 
 - **Map** – Leaflet map of Cambridge with a marker for each pub
