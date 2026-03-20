@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="app" id="app">
-    <button type="button" class="mobile-view-toggle mobile-view-toggle--list" id="mobile-toggle-list" aria-label="Switch to pub list">
+    <button type="button" class="mobile-view-toggle mobile-view-toggle--list" id="mobile-toggle-list" aria-label="Switch to Pub-list">
       <svg class="mobile-toggle-icon" viewBox="0 0 24 32" width="20" height="26" aria-hidden="true">
         <path fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" d="M6 2h12l-1.5 26H7.5L6 2z"/>
         <path fill="currentColor" d="M7 6h10v16c0 2-2 4-5 4s-5-2-5-4V6z" opacity="0.5"/>
@@ -25,14 +25,15 @@
       type="button"
       class="sidebar-toggle"
       id="sidebar-toggle"
-      aria-label="Hide pub list"
+      aria-label="Collapse list"
       aria-expanded="true"
+      title="Collapse list"
     >
-      « Hide list
+      <span aria-hidden="true">❮</span>
     </button>
     <aside class="sidebar">
       <header class="sidebar-header">
-        <button type="button" class="mobile-view-toggle mobile-view-toggle--map" id="mobile-toggle-map" aria-label="Back to map">
+        <button type="button" class="mobile-view-toggle mobile-view-toggle--map" id="mobile-toggle-map" aria-label="Back to Map">
           ← Back to Map
         </button>
         <h1 class="brand">
@@ -45,9 +46,16 @@
             <path fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity="0.9" d="M7 6h10"/>
           </svg>
           <span class="brand-text">PintPoint</span>
+          <span class="developer-badge" id="developer-badge" hidden>Developer</span>
         </h1>
         <p class="tagline">Find the cheapest pint in Cambridge</p>
-        <button type="button" class="about-button" id="about-button">About PintPoint</button>
+        <div class="header-actions">
+          <button type="button" class="about-button" id="about-button">About PintPoint</button>
+          <button type="button" class="about-button" id="auth-login-button">Login</button>
+          <button type="button" class="about-button" id="auth-account-button" hidden>Account</button>
+          <button type="button" class="about-button" id="auth-logout-button" hidden>Logout</button>
+          <button type="button" class="about-button" id="developer-menu-button" hidden>Developer Menu</button>
+        </div>
       </header>
 
       <div class="search-section">
@@ -97,6 +105,93 @@
           Love, Adam and James x
         </p>
       </div>
+    </div>
+  </div>
+
+  <div class="about-overlay" id="auth-overlay" aria-hidden="true">
+    <div class="about-dialog auth-dialog" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+      <button type="button" class="about-close" id="auth-close" aria-label="Close account dialog">×</button>
+      <h2 class="about-title" id="auth-title">Your PintPoint account</h2>
+      <p class="auth-helper">Create an account or log in to submit pint updates. New accounts must verify email within 12 hours or they are automatically deleted.</p>
+      <p class="auth-message" id="auth-message" role="status"></p>
+      <div class="auth-actions" id="auth-actions">
+        <button type="button" class="auth-action-button is-active" data-auth-panel-target="login-panel">Login</button>
+        <button type="button" class="auth-action-button" data-auth-panel-target="signup-panel">Sign up</button>
+        <button type="button" class="auth-action-button" data-auth-panel-target="verify-panel">Verify email</button>
+        <button type="button" class="auth-action-button" data-auth-panel-target="resend-panel">Resend verification</button>
+        <button type="button" class="auth-action-button" data-auth-panel-target="reset-panel">Reset password</button>
+        <button type="button" class="auth-action-button" data-auth-panel-target="username-panel">Change username</button>
+        <button type="button" class="auth-action-button" id="auth-status-tab" data-auth-panel-target="status-panel" hidden>Messages</button>
+      </div>
+
+      <section class="auth-section auth-panel is-active" id="login-panel">
+        <form id="login-form" class="auth-form auth-form--two-col">
+          <label>Email <input type="email" name="email" required autocomplete="email" /></label>
+          <label>Password <input type="password" name="password" required autocomplete="current-password" /></label>
+          <button type="submit" class="auth-submit">Log in</button>
+        </form>
+      </section>
+
+      <section class="auth-section auth-panel" id="signup-panel">
+        <form id="signup-form" class="auth-form auth-form--two-col">
+          <label>Email <input type="email" name="email" required autocomplete="email" /></label>
+          <label>Username <input type="text" name="username" required minlength="3" maxlength="24" autocomplete="username" /></label>
+          <label>Password <input type="password" name="password" required minlength="8" autocomplete="new-password" /></label>
+          <label>Code (optional) <input type="text" name="code" autocomplete="off" /></label>
+          <button type="submit" class="auth-submit">Create account</button>
+        </form>
+      </section>
+
+      <section class="auth-section auth-panel" id="verify-panel">
+        <form id="verify-form" class="auth-form auth-form--inline">
+          <label>Verification code <input type="text" name="code" required autocomplete="one-time-code" /></label>
+          <button type="submit" class="auth-submit">Verify account</button>
+        </form>
+      </section>
+
+      <section class="auth-section auth-panel" id="resend-panel">
+        <form id="resend-verify-form" class="auth-form auth-form--compact">
+          <button type="submit" class="auth-submit">Resend verification</button>
+        </form>
+      </section>
+
+      <section class="auth-section auth-panel" id="reset-panel">
+        <p class="auth-helper auth-helper--compact">Step 1: request a reset email/code.</p>
+        <form id="reset-request-form" class="auth-form auth-form--inline auth-form--compact">
+          <label>Email <input type="email" name="email" required autocomplete="email" /></label>
+          <button type="submit" class="auth-submit">Send reset link/code</button>
+        </form>
+        <p class="auth-helper auth-helper--compact">Step 2: set a new password.</p>
+        <form id="reset-password-form" class="auth-form auth-form--three-col">
+          <label>Email (optional) <input type="email" name="email" autocomplete="email" /></label>
+          <label>Reset code (optional) <input type="text" name="code" autocomplete="one-time-code" /></label>
+          <label>New password <input type="password" name="newPassword" minlength="8" required autocomplete="new-password" /></label>
+          <button type="submit" class="auth-submit">Reset password</button>
+        </form>
+      </section>
+
+      <section class="auth-section auth-panel" id="username-panel">
+        <form id="username-form" class="auth-form auth-form--inline">
+          <label>New username <input type="text" name="username" minlength="3" maxlength="24" autocomplete="off" /></label>
+          <button type="submit" class="auth-submit">Update username</button>
+        </form>
+      </section>
+
+      <section class="auth-section auth-panel" id="status-panel">
+        <p class="auth-status-text" id="auth-status-text"></p>
+      </section>
+    </div>
+  </div>
+
+  <div class="about-overlay" id="developer-overlay" aria-hidden="true">
+    <div class="about-dialog developer-dialog" role="dialog" aria-modal="true" aria-labelledby="developer-title">
+      <button type="button" class="about-close" id="developer-close" aria-label="Close developer menu">×</button>
+      <h2 class="about-title" id="developer-title">Developer Menu</h2>
+      <p class="auth-helper">Approve or reject proposed pint updates from verified users.</p>
+      <h3 class="developer-subtitle">Pending proposals</h3>
+      <div id="developer-proposals" class="developer-proposals"></div>
+      <h3 class="developer-subtitle">Audit log</h3>
+      <div id="developer-audit" class="developer-proposals"></div>
     </div>
   </div>
 

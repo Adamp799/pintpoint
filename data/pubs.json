@@ -4,10 +4,11 @@
     "name": "The Eagle",
     "address": "8 Benet Street, CB2 3QN",
     "description": "Historic pub where Watson and Crick discussed the structure of DNA. Cosy panelled rooms and a famous RAF bar.",
-    "cheapestPint": 4.20,
+    "cheapestPint": 4.2,
     "cheapestPintName": "TBC",
     "lat": 52.204066,
-    "lng": 0.1179405
+    "lng": 0.1179405,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "mill",
@@ -17,7 +18,8 @@
     "cheapestPint": 4.95,
     "cheapestPintName": "TBC",
     "lat": 52.2014871,
-    "lng": 0.1161778
+    "lng": 0.1161778,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "pickerel",
@@ -27,17 +29,19 @@
     "cheapestPint": 5.85,
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2099277,
-    "lng": 0.1161966
+    "lng": 0.1161966,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "fort-st-george",
     "name": "Fort St George",
     "address": "Midsummer Common, CB4 1HA",
     "description": "Riverside pub on Midsummer Common with great views of the Cam and punting.",
-    "cheapestPint": 5.20,
+    "cheapestPint": 5.2,
     "cheapestPintName": "TBC",
     "lat": 52.2124561,
-    "lng": 0.127804
+    "lng": 0.127804,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "anchor",
@@ -47,17 +51,19 @@
     "cheapestPint": 6.25,
     "cheapestPintName": "Pravha",
     "lat": 52.2019394,
-    "lng": 0.1157293
+    "lng": 0.1157293,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "alexandra-arms",
     "name": "The Alexandra Arms",
     "address": "20 Gwydir Street, CB1 2LG",
     "description": "CAMRA Good Beer Guide regular. Real ale focus and a friendly local vibe.",
-    "cheapestPint": 5.50,
+    "cheapestPint": 5.5,
     "cheapestPintName": "Various Ales",
     "lat": 52.2039,
-    "lng": 0.1394
+    "lng": 0.1394,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "elm-tree",
@@ -67,7 +73,8 @@
     "cheapestPint": 3.85,
     "cheapestPintName": "TBC",
     "lat": 52.2051547,
-    "lng": 0.1294263
+    "lng": 0.1294263,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "baron-of-beef",
@@ -77,67 +84,74 @@
     "cheapestPint": 4.45,
     "cheapestPintName": "TBC",
     "lat": 52.2089164,
-    "lng": 0.1181145
+    "lng": 0.1181145,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "cambridge-blue",
     "name": "The Cambridge Blue",
     "address": "85–87 Gwydir Street, CB1 2LG",
     "description": "Multi-room pub with a huge beer garden. Extensive ale and cider list.",
-    "cheapestPint": 4.50,
+    "cheapestPint": 4.5,
     "cheapestPintName": "Various real ales",
     "lat": 52.2023787,
-    "lng": 0.1391899
+    "lng": 0.1391899,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "free-press",
     "name": "The Free Press",
     "address": "7 Prospect Row, CB1 1DU",
     "description": "Small, no-nonsense pub with a loyal following. No music, no fruit machines.",
-    "cheapestPint": 4.80,
+    "cheapestPint": 4.8,
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2047799,
-    "lng": 0.1303831
+    "lng": 0.1303831,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "granta",
     "name": "The Granta",
     "address": "14 Newnham Road, CB3 9EX",
     "description": "Riverside pub with a terrace overlooking the mill pond. Popular for summer drinks.",
-    "cheapestPint": 5.90,
+    "cheapestPint": 5.9,
     "cheapestPintName": "Granta Bitter",
     "lat": 52.1997,
-    "lng": 0.1138
+    "lng": 0.1138,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "haymakers",
     "name": "The Haymakers",
     "address": "54 High Street, Chesterton, CB4 1NG",
     "description": "Community pub in Chesterton with real ales and a welcoming atmosphere.",
-    "cheapestPint": 5.30,
+    "cheapestPint": 5.3,
     "cheapestPintName": "Minotaur",
     "lat": 52.2174507,
-    "lng": 0.1394316
+    "lng": 0.1394316,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "mitre",
     "name": "The Mitre",
     "address": "17 Bridge Street, CB2 1UF",
     "description": "Historic pub on Bridge Street with wood-panelled interior and a solid ale selection.",
-    "cheapestPint": 6.00,
+    "cheapestPint": 6,
     "cheapestPintName": "Nicholson Pale Ale",
     "lat": 52.2088653,
-    "lng": 0.1182051
+    "lng": 0.1182051,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "panton-arms",
     "name": "The Panton Arms",
     "address": "43 Panton Street, CB2 1HL",
     "description": "Often frequented by scientists from the Engineering and Chemistry Department of the University of Cambridge.",
-    "cheapestPint": 5.70,
+    "cheapestPint": 5.7,
     "cheapestPintName": "Pravha/Amstel",
     "lat": 52.1964242,
-    "lng": 0.1249433
+    "lng": 0.1249433,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "pint-shop",
@@ -147,17 +161,19 @@
     "cheapestPint": 5.25,
     "cheapestPintName": "TBC",
     "lat": 52.2042033,
-    "lng": 0.1191156
+    "lng": 0.1191156,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "royal-standard",
     "name": "The Royal Standard",
     "address": "2 Mill Road, CB1 2AD",
     "description": "Unpretentious local on Mill Road with a mixed crowd and regular events.",
-    "cheapestPint": 4.70,
+    "cheapestPint": 4.7,
     "cheapestPintName": "Real Ale",
     "lat": 52.197082,
-    "lng": 0.149573
+    "lng": 0.149573,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "blue-moon",
@@ -167,27 +183,30 @@
     "cheapestPint": 4.15,
     "cheapestPintName": "TBC",
     "lat": 52.204837,
-    "lng": 0.1366245
+    "lng": 0.1366245,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "brewtap",
     "name": "BrewBoard Taproom",
     "address": "2 Wheeler Street, CB2 3QJ",
     "description": "Taproom for local BrewBoard brewery. Fresh cask and keg in the heart of town.",
-    "cheapestPint": 4.90,
+    "cheapestPint": 4.9,
     "cheapestPintName": "TBC",
     "lat": 52.2044547,
-    "lng": 0.1191328
+    "lng": 0.1191328,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "white-horse-milton",
     "name": "The White Horse",
     "address": "20–22 High Street, Milton, CB24 6AJ",
     "description": "CAMRA Community Pub of the Year. Six changing real ales, large beer garden, food and live gigs. Dog-friendly.",
-    "cheapestPint": 4.20,
+    "cheapestPint": 4.2,
     "cheapestPintName": "TBC",
     "lat": 52.2418,
-    "lng": 0.1615
+    "lng": 0.1615,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "waggon-horses-milton",
@@ -197,7 +216,8 @@
     "cheapestPint": 4.35,
     "cheapestPintName": "TBC",
     "lat": 52.2422,
-    "lng": 0.1608
+    "lng": 0.1608,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "red-lion-histon",
@@ -207,7 +227,8 @@
     "cheapestPint": 4.25,
     "cheapestPintName": "TBC",
     "lat": 52.2516,
-    "lng": 0.1064
+    "lng": 0.1064,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "boot-histon",
@@ -217,27 +238,30 @@
     "cheapestPint": 4.95,
     "cheapestPintName": "TBC",
     "lat": 52.2512,
-    "lng": 0.1072
+    "lng": 0.1072,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "kings-head-impington",
     "name": "The King's Head",
     "address": "32 High Street, Impington, CB24 9NP",
     "description": "Village local between Histon and Cambridge. Real ales, pub food and a relaxed atmosphere.",
-    "cheapestPint": 4.30,
+    "cheapestPint": 4.3,
     "cheapestPintName": "TBC",
     "lat": 52.2482,
-    "lng": 0.1125
+    "lng": 0.1125,
+    "lastUpdated": "07/03/2026"
   },
   {
     "id": "george-girton",
     "name": "The George",
     "address": "71 High Street, Girton, CB3 0QD",
     "description": "Village pub with traditional and Thai food. Cafe by day, pub by evening. Beer garden and sports TV.",
-    "cheapestPint": 4.40,
+    "cheapestPint": 4.4,
     "cheapestPintName": "TBC",
     "lat": 52.2329,
-    "lng": 0.0845
+    "lng": 0.0845,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "architect",
@@ -247,37 +271,41 @@
     "cheapestPint": 5.25,
     "cheapestPintName": "Tiger Copper",
     "lat": 52.2121,
-    "lng": 0.1131
+    "lng": 0.1131,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "grapes",
     "name": "The Grapes",
     "address": "19 Histon Rd, Arbury, Cambridge CB4 3JB",
     "description": "Renowned pub with live music, real ales and pool table, plus classic British menu and steak night.",
-    "cheapestPint": 4.70,
+    "cheapestPint": 4.7,
     "cheapestPintName": "Greene King IPA",
-    "lat": 52.2150,
-    "lng": 0.1108
+    "lat": 52.215,
+    "lng": 0.1108,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "punter",
     "name": "The Punter",
     "address": "3 Pound Hill, Cambridge CB3 0AE",
     "description": "Cosy pub overlooking a secluded garden courtyard, with 1930s-era artwork jumbled about the walls.",
-    "cheapestPint": 5.50,
+    "cheapestPint": 5.5,
     "cheapestPintName": "Nethergate Suffolk County",
     "lat": 52.2105,
-    "lng": 0.1132
+    "lng": 0.1132,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "king-street-run",
     "name": "King Street Run",
     "address": "86 King St, Cambridge CB1 1LN",
     "description": "Friendly pub with wallpapered ceiling, a 3D TV showing live sport and a games room with pool tables.",
-    "cheapestPint": 6.00,
+    "cheapestPint": 6,
     "cheapestPintName": "Fosters/Carling",
     "lat": 52.2072,
-    "lng": 0.1253
+    "lng": 0.1253,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "cambridge-tap",
@@ -287,7 +315,8 @@
     "cheapestPint": 5.95,
     "cheapestPintName": "Amstel",
     "lat": 52.2034,
-    "lng": 0.1234
+    "lng": 0.1234,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "town-and-gown",
@@ -297,27 +326,30 @@
     "cheapestPint": 6.05,
     "cheapestPintName": "Pravha",
     "lat": 52.2064,
-    "lng": 0.1200
+    "lng": 0.12,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "grain-and-hop",
     "name": "The Grain and Hop Store",
     "address": "69 Regent St, Cambridge CB2 1AB",
     "description": "Housed in a former factory, this large pub branch offers classic pub fare, plus live sports on TV.",
-    "cheapestPint": 6.10,
+    "cheapestPint": 6.1,
     "cheapestPintName": "Ripchord",
     "lat": 12.0085,
-    "lng": 0.12714
+    "lng": 0.12714,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "clarendon",
     "name": "The Clarendon Arms",
     "address": "35-36 Clarendon St, Cambridge CB1 1JX",
     "description": "Traditional pub with an innovative gastro menu, timeless decor and a compact beer garden.",
-    "cheapestPint": 4.50,
+    "cheapestPint": 4.5,
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2047,
-    "lng": 0.1277
+    "lng": 0.1277,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "brewhouse",
@@ -327,37 +359,41 @@
     "cheapestPint": 5.35,
     "cheapestPintName": "House pale ale",
     "lat": 52.2074,
-    "lng": 0.1222
+    "lng": 0.1222,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "champion-of-the-thames",
     "name": "Champion of the Thames",
     "address": "68 King St, Cambridge CB1 1LN",
     "description": "Traditional, no-nonsense watering hole on a street corner serving Greene King ales.",
-    "cheapestPint": 5.40,
+    "cheapestPint": 5.4,
     "cheapestPintName": "Greene King IPA",
     "lat": 52.207352,
-    "lng": 0.124436
+    "lng": 0.124436,
+    "lastUpdated": "08/03/2026"
   },
   {
     "id": "burleigh-arms",
     "name": "The Burleigh Arms",
     "address": "9-11 Newmarket Rd, Cambridge CB5 8EG",
     "description": "Modern pub with a beer garden offering snacks & meals, plus cask ales & beers from around the world.",
-    "cheapestPint": 6.00,
+    "cheapestPint": 6,
     "cheapestPintName": "Rosa Blanca",
     "lat": 52.2082,
-    "lng": 0.1328
+    "lng": 0.1328,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "brook",
     "name": "The Brook",
     "address": "25 Brookfields, Mill Rd, Cambridge CB1 3NW",
     "description": "Homey hangout offering pub grub, live music & karaoke nights in a casual setting with a beer garden.",
-    "cheapestPint": 5.00,
+    "cheapestPint": 5,
     "cheapestPintName": "Carlsberg",
     "lat": 52.1961,
-    "lng": 0.1554
+    "lng": 0.1554,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "smokeworks",
@@ -367,47 +403,52 @@
     "cheapestPint": 6.25,
     "cheapestPintName": "Session IPA",
     "lat": 52.2038914,
-    "lng": 0.1184581
+    "lng": 0.1184581,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "duke-of-cambridge",
     "name": "The Duke of Cambridge",
     "address": "176 East Rd, Cambridge CB1 1BG",
     "description": "Everyday pub plates and draft beer provided in a warm, relaxed environment with outdoor seating.",
-    "cheapestPint": 5.50,
+    "cheapestPint": 5.5,
     "cheapestPintName": "Amstel",
     "lat": 52.204961,
-    "lng": 0.133426
+    "lng": 0.133426,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "corner-house",
     "name": "The Corner House",
     "address": "231 Newmarket Rd, Cambridge CB5 8JE",
     "description": "Pub featuring a beer garden & green space, serving a wide menu of food & drink.",
-    "cheapestPint": 4.90,
+    "cheapestPint": 4.9,
     "cheapestPintName": "Fosters",
     "lat": 52.2095,
-    "lng": 0.1434
+    "lng": 0.1434,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "tivoli",
     "name": "The Tivoli",
     "address": "16 Chesterton Rd, Cambridge CB4 3AX",
     "description": "Housed in an elegant old cinema, this bustling venue serves-up British pub food and real ales.",
-    "cheapestPint": 7.30,
+    "cheapestPint": 7.3,
     "cheapestPintName": "Estrella",
     "lat": 52.2138,
-    "lng": 0.1237
+    "lng": 0.1237,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "live",
     "name": "The Live and Let Live",
     "address": "40 Mawson Rd, Cambridge CB1 2EA",
     "description": "Lively pub with a rustic vibe, with a large choice of real ales and traditional bar food.",
-    "cheapestPint": 5.60,
+    "cheapestPint": 5.6,
     "cheapestPintName": "Citra",
     "lat": 52.1993,
-    "lng": 0.1351
+    "lng": 0.1351,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "tram-depot",
@@ -417,37 +458,41 @@
     "cheapestPint": 4.95,
     "cheapestPintName": "Tiger",
     "lat": 52.2046,
-    "lng": 0.1328
+    "lng": 0.1328,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "earl-of-derby",
     "name": "The Earl of Derby",
     "address": "129 Hills Rd, Cambridge CB2 1PG",
     "description": "Offering fresh and traditional home cooked fair and pub food, they are famous for their substantial Full English Breakfast",
-    "cheapestPint": 5.00,
+    "cheapestPint": 5,
     "cheapestPintName": "XPA",
     "lat": 52.1921,
-    "lng": 0.1341
+    "lng": 0.1341,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "empress",
     "name": "The Empress",
     "address": "72 Thoday St, Cambridge CB1 3AX",
     "description": "This old-fashioned pub with garden and resident pig offers a large choice of real ales and whiskies.",
-    "cheapestPint": 5.30,
+    "cheapestPint": 5.3,
     "cheapestPintName": "Nene Valley",
     "lat": 52.1991,
-    "lng": 0.1473
+    "lng": 0.1473,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "red-bull",
     "name": "The Red Bull",
     "address": "11 Barton Rd, Cambridge CB3 9JZ",
     "description": "Family-friendly pub-restaurant offering pub grub and pizza, TV with live sport and patio seating.",
-    "cheapestPint": 6.00,
+    "cheapestPint": 6,
     "cheapestPintName": "Anchorman",
     "lat": 52.1965,
-    "lng": 0.1087
+    "lng": 0.1087,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "the-regal",
@@ -457,17 +502,19 @@
     "cheapestPint": 1.99,
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2029,
-    "lng": 0.1239
+    "lng": 0.1239,
+    "lastUpdated": "09/03/2026"
   },
   {
     "id": "six-bells",
     "name": "The Six Bells",
     "address": "11 Covent Garden, Petersfield, Cambridge CB1 2HS",
     "description": "Traditional wood-panelled pub with patio garden offering real ales, food and some live music.",
-    "cheapestPint": 4.50,
+    "cheapestPint": 4.5,
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2004,
-    "lng": 0.1344
+    "lng": 0.1344,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "green-dragon",
@@ -477,17 +524,19 @@
     "cheapestPint": 5.15,
     "cheapestPintName": "Greene King IPA",
     "lat": 52.2179,
-    "lng": 0.1455
+    "lng": 0.1455,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "ticket-office",
     "name": "The Old Ticket Office",
     "address": "Unit 1, Cambridge Railway Station, Cambridge CB1 2JW",
     "description": "A magnificent pub at Cambridge railway station offering a range of craft beers, ciders, wines, and spirits.",
-    "cheapestPint": 5.50,
+    "cheapestPint": 5.5,
     "cheapestPintName": "Young's Original",
     "lat": 52.194727,
-    "lng": 0.137681
+    "lng": 0.137681,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "station-tavern",
@@ -497,47 +546,52 @@
     "cheapestPint": 6.15,
     "cheapestPintName": "Pravha",
     "lat": 52.1949,
-    "lng": 0.1377
+    "lng": 0.1377,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "isaac-newton",
     "name": "Sir Isaac Newton",
     "address": "84 Castle St, Cambridge CB3 0AJ",
     "description": "Convivial boozer offering burgers and pub grub, sports events on large screens, darts and pool.",
-    "cheapestPint": 5.10,
+    "cheapestPint": 5.1,
     "cheapestPintName": "Greene King IPA",
-    "lat": 52.213410,
-    "lng": 0.112016
+    "lat": 52.21341,
+    "lng": 0.112016,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "prince-regent",
     "name": "The Prince Regent",
     "address": "91 Regent St, Cambridge CB2 1AW",
     "description": "Traditional tavern serving pub standbys such as burgers and roasts in modern-meets-traditional digs.",
-    "cheapestPint": 5.70,
+    "cheapestPint": 5.7,
     "cheapestPintName": "Amstel",
-    "lat": 52.2000,
-    "lng": 0.1270
+    "lat": 52.2,
+    "lng": 0.127,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "alma",
     "name": "The Alma",
     "address": "The Alma, 26 Russell Ct, Cambridge CB2 1HW",
     "description": "Traditional pub with hardwood floors, old-time beer barrels and memorabilia adorning the walls.",
-    "cheapestPint": 5.00,
+    "cheapestPint": 5,
     "cheapestPintName": "Greene King IPA",
-    "lat": 52.1960,
-    "lng": 0.1256
+    "lat": 52.196,
+    "lng": 0.1256,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "portland",
     "name": "The Portland Arms",
     "address": "129 Chesterton Rd, Cambridge CB4 3BA",
     "description": "Lively pub with real ales and a courtyard garden, plus 200-capacity live music venue.",
-    "cheapestPint": 5.80,
+    "cheapestPint": 5.8,
     "cheapestPintName": "Set List",
     "lat": 52.2144,
-    "lng": 0.1247
+    "lng": 0.1247,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "dobblers",
@@ -547,37 +601,41 @@
     "cheapestPint": 4.55,
     "cheapestPintName": "Southwold Bitter",
     "lat": 52.2055,
-    "lng": 0.1400
+    "lng": 0.14,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "milton-arms",
     "name": "The Milton Arms",
     "address": "205 Milton Rd, Cambridge CB4 1XG",
     "description": "A family-friendly pub restaurant perched on the picturesque outskirts of Cambridge.",
-    "cheapestPint": 4.20,
+    "cheapestPint": 4.2,
     "cheapestPintName": "Carlsberg",
     "lat": 52.2228,
-    "lng": 0.1365
+    "lng": 0.1365,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "geldart",
     "name": "The Geldart",
     "address": "1 Ainsworth St, Cambridge CB1 2PF",
     "description": "Traditional pub with regular live music, a classic menu and special dishes served on hot rocks.",
-    "cheapestPint": 5.40,
+    "cheapestPint": 5.4,
     "cheapestPintName": "Various Ales",
     "lat": 52.2036,
-    "lng": 0.1422
+    "lng": 0.1422,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "kingston",
     "name": "The Kingston Arms",
     "address": "33 Kingston St, Cambridge CB1 2NU",
     "description": "Laid-back pub with a sizable garden, serving locally sourced dishes, wine & beers.",
-    "cheapestPint": 4.30,
+    "cheapestPint": 4.3,
     "cheapestPintName": "Side Pocket for a Toad",
     "lat": 52.2004,
-    "lng": 0.1398
+    "lng": 0.1398,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "petersfield",
@@ -587,26 +645,29 @@
     "cheapestPint": 5.55,
     "cheapestPintName": "London Original",
     "lat": 52.201233,
-    "lng": 0.140678
+    "lng": 0.140678,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "caverley",
     "name": "Caverley's Brewery",
     "address": "23A Hooper St, Cambridge CB1 2NZ",
     "description": "Founded by two brothers in 2014, who are intent on brewing a diverse range of beer inspired by the worlds eclectic beer styles.",
-    "cheapestPint": 6.00,
+    "cheapestPint": 6,
     "cheapestPintName": "Various pints",
-    "lat": 52.201120,
-    "lng": 0.142533
+    "lat": 52.20112,
+    "lng": 0.142533,
+    "lastUpdated": "10/03/2026"
   },
   {
     "id": "devonshire",
     "name": "The Devonshire Arms",
     "address": "1 Devonshire Rd, Cambridge CB1 2BH",
     "description": "Community pub with a wood burner, real ales, cider & a Caribbean fusion menu.",
-    "cheapestPint": 4.90,
+    "cheapestPint": 4.9,
     "cheapestPintName": "Justinian",
-    "lat": 52.198870,
-    "lng": 0.139218
+    "lat": 52.19887,
+    "lng": 0.139218,
+    "lastUpdated": "10/03/2026"
   }
 ]
