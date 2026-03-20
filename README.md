@@ -59,7 +59,7 @@ Then restart `npm run dev` so the server picks up your SMTP settings.
 The app uses Supabase-backed persistence for users, proposals, audit logs, and pubs.
 
 1. Create a Supabase project.
-2. Open SQL editor and run `supabase/schema.sql`.
+2. Open SQL editor and run `supabase/schema.sql` (includes `sessions` table for persistent logins).
 3. Set `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` in environment variables (local `.env.local` and Vercel project env).
 4. Deploy/restart.
 

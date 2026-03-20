@@ -52,3 +52,13 @@ create table if not exists public.audit_logs (
   proposal jsonb,
   applied_update jsonb
 );
+
+create table if not exists public.sessions (
+  id text primary key,
+  user_id text not null references public.users(id) on delete cascade,
+  created_at bigint not null,
+  updated_at bigint not null,
+  expires_at bigint not null,
+  ip text,
+  user_agent text
+);

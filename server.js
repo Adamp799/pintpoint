@@ -15,6 +15,7 @@ const SESSION_SECRET = process.env.SESSION_SECRET || 'replace-this-in-production
 const DEV_CODE = 'boucherpeach';
 const VERIFY_WINDOW_MS = 12 * 60 * 60 * 1000;
 const RESET_WINDOW_MS = 60 * 60 * 1000;
+const SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
 const IS_VERCEL = Boolean(process.env.VERCEL);
 
 const SUPABASE_URL = process.env.SUPABASE_URL;
@@ -28,6 +29,7 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, {
 });
 
 const app = express();
+app.set('trust proxy', 1);
 const ROOT_DIR = __dirname;
 const SOURCE_PUBS_FILE = path.join(ROOT_DIR, 'data', 'pubs.json');
 const ipRateLimits = new Map();
@@ -374,6 +376,63 @@ async function appendAudit(entry) {
   if (error) throw error;
 }
 
+async function createSessionForUser(userId, req) {
+  const now = Date.now();
+  const sessionId = makeToken(18);
+  const { error } = await supabase.from('sessions').insert({
+    id: sessionId,
+    user_id: userId,
+    created_at: now,
+    updated_at: now,
+    expires_at: now + SESSION_TTL_MS,
+    ip: getIp(req),
+    user_agent: String(req.headers['user-agent'] || '').slice(0, 500)
+  });
+  if (error) throw error;
+  return sessionId;
+}
+
+async function getSessionById(sessionId) {
+  return dbSelectSingle('sessions', 'id', sessionId);
+}
+
+async function deleteSession(sessionId) {
+  const { error } = await supabase.from('sessions').delete().eq('id', sessionId);
+  if (error) throw error;
+}
+
+async function deleteExpiredSessions() {
+  const { error } = await supabase.from('sessions').delete().lt('expires_at', Date.now());
+  if (error) throw error;
+}
+
+async function touchSession(sessionId) {
+  const now = Date.now();
+  const { error } = await supabase
+    .from('sessions')
+    .update({ updated_at: now, expires_at: now + SESSION_TTL_MS })
+    .eq('id', sessionId);
+  if (error) throw error;
+}
+
+async function getUserFromRequestSession(req, { touch = false } = {}) {
+  const sessionId = req.session?.sessionId;
+  if (!sessionId) return null;
+  const sessionRow = await getSessionById(sessionId);
+  if (!sessionRow) return null;
+  if (Date.now() > Number(sessionRow.expires_at || 0)) {
+    await deleteSession(sessionId);
+    return null;
+  }
+  const user = await getUserById(sessionRow.user_id);
+  if (!user) {
+    await deleteSession(sessionId);
+    return null;
+  }
+  if (touch) await touchSession(sessionId);
+  return user;
+}
+
 async function ensureSupabaseReady() {
   const { error } = await supabase.from('pubs').select('id').limit(1);
   if (error) {
@@ -388,6 +447,13 @@ async function ensureSupabaseReady() {
   if (!seed.length) return;
   const { error: upsertError } = await supabase.from('pubs').upsert(seed.map(mapPubToRow), { onConflict: 'id' });
   if (upsertError) throw upsertError;
+
+  const { error: sessionsError } = await supabase.from('sessions').select('id').limit(1);
+  if (sessionsError) {
+    throw new Error(
+      `Supabase sessions table is missing or inaccessible (${sessionsError.message}). Run supabase/schema.sql again.`
+    );
+  }
 }
 
 async function ensureInitialized() {
@@ -400,8 +466,7 @@ async function ensureInitialized() {
 
 async function requireAuth(req, res, next) {
   try {
-    if (!req.session?.userId) return res.status(401).json({ error: 'Please log in first.' });
-    const user = await getUserById(req.session.userId);
+    const user = await getUserFromRequestSession(req, { touch: true });
     if (!user) {
       req.session = null;
       return res.status(401).json({ error: 'Your session has expired. Please log in again.' });
@@ -429,7 +494,7 @@ app.use(
   cookieSession({
     name: 'pintpoint.sid',
     keys: [SESSION_SECRET],
-    maxAge: 7 * 24 * 60 * 60 * 1000,
+    maxAge: SESSION_TTL_MS,
     httpOnly: true,
     sameSite: 'lax',
     secure: process.env.NODE_ENV === 'production'
@@ -440,6 +505,7 @@ app.use(async (_req, _res, next) => {
   try {
     await ensureInitialized();
     await deleteExpiredUnverifiedUsers();
+    await deleteExpiredSessions();
     next();
   } catch (error) {
     next(error);
@@ -456,7 +522,7 @@ app.get('/api/pubs', async (_req, res, next) => {
 
 app.get('/api/auth/me', async (req, res, next) => {
   try {
-    const user = req.session?.userId ? await getUserById(req.session.userId) : null;
+    const user = await getUserFromRequestSession(req, { touch: true });
     res.json({ user: user ? safeUser(user) : null });
   } catch (error) {
     next(error);
@@ -501,7 +567,7 @@ app.post('/api/auth/signup', async (req, res, next) => {
       rateLimits: {}
     };
     await saveUser(user);
-    req.session.userId = user.id;
+    req.session.sessionId = await createSessionForUser(user.id, req);
     const result = await sendVerificationEmail(user, verificationToken, verificationCode);
     return res.status(201).json({
       user: safeUser(user),
@@ -525,7 +591,7 @@ app.post('/api/auth/login', async (req, res, next) => {
     const user = await getUserByEmail(email);
     if (!user) return res.status(401).json({ error: 'Invalid email or password.' });
     if (!(await bcrypt.compare(password, user.passwordHash))) return res.status(401).json({ error: 'Invalid email or password.' });
-    req.session.userId = user.id;
+    req.session.sessionId = await createSessionForUser(user.id, req);
     return res.json({ user: safeUser(user) });
   } catch (error) {
     next(error);
@@ -533,8 +599,12 @@ app.post('/api/auth/login', async (req, res, next) => {
 });
 
 app.post('/api/auth/logout', (req, res) => {
+  const sessionId = req.session?.sessionId;
   req.session = null;
-  res.json({ ok: true });
+  if (!sessionId) return res.json({ ok: true });
+  deleteSession(sessionId)
+    .then(() => res.json({ ok: true }))
+    .catch(() => res.json({ ok: true }));
 });
 
 app.get('/api/auth/verify', requireAuth, async (req, res, next) => {
