@@ -18,19 +18,25 @@ const RESET_WINDOW_MS = 60 * 60 * 1000;
 
 const app = express();
 const ROOT_DIR = __dirname;
-const DATA_DIR = path.join(ROOT_DIR, 'data');
+const IS_VERCEL = Boolean(process.env.VERCEL);
+const SOURCE_PUBS_FILE = path.join(ROOT_DIR, 'data', 'pubs.json');
+const DATA_DIR = IS_VERCEL ? path.join('/tmp', 'pintpoint-data') : path.join(ROOT_DIR, 'data');
 const PUBS_FILE = path.join(DATA_DIR, 'pubs.json');
 const USERS_FILE = path.join(DATA_DIR, 'users.private.json');
 const PROPOSALS_FILE = path.join(DATA_DIR, 'update-proposals.private.json');
 const MAIL_LOG_FILE = path.join(DATA_DIR, 'verification-mails.private.log');
 const RESET_MAIL_LOG_FILE = path.join(DATA_DIR, 'password-reset-mails.private.log');
 const AUDIT_LOG_FILE = path.join(DATA_DIR, 'developer-audit.private.json');
-const SESSION_DIR = path.join(ROOT_DIR, '.sessions');
+const SESSION_DIR = IS_VERCEL ? path.join('/tmp', 'pintpoint-sessions') : path.join(ROOT_DIR, '.sessions');
 const ipRateLimits = new Map();
 
 function ensurePath() {
   fs.mkdirSync(DATA_DIR, { recursive: true });
   fs.mkdirSync(SESSION_DIR, { recursive: true });
+  if (!fs.existsSync(PUBS_FILE)) {
+    if (fs.existsSync(SOURCE_PUBS_FILE)) fs.copyFileSync(SOURCE_PUBS_FILE, PUBS_FILE);
+    else fs.writeFileSync(PUBS_FILE, '[]');
+  }
   if (!fs.existsSync(USERS_FILE)) fs.writeFileSync(USERS_FILE, '[]');
   if (!fs.existsSync(PROPOSALS_FILE)) fs.writeFileSync(PROPOSALS_FILE, '[]');
   if (!fs.existsSync(MAIL_LOG_FILE)) fs.writeFileSync(MAIL_LOG_FILE, '');
@@ -273,6 +279,10 @@ app.get('/api/auth/me', (req, res) => {
   const users = readJson(USERS_FILE, []);
   const user = users.find((u) => u.id === req.session.userId);
   res.json({ user: user ? safeUser(user) : null });
+});
+
+app.get('/api/pubs', (_req, res) => {
+  res.json(readJson(PUBS_FILE, []));
 });
 
 app.post('/api/auth/signup', async (req, res) => {

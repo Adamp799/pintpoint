@@ -927,7 +927,7 @@ async function init() {
   }
 
   try {
-    const response = await fetch('data/pubs.json');
+    const response = await fetch('/api/pubs');
     if (!response.ok) throw new Error('Failed to load pubs');
     pubs = await response.json();
   } catch (error) {
