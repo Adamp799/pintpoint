@@ -652,6 +652,10 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ error: 'Server error. Please try again.' });
 });
 
-app.listen(PORT, () => {
-  console.log(`PintPoint running on ${APP_BASE_URL}`);
-});
+if (process.env.VERCEL) {
+  module.exports = app;
+} else {
+  app.listen(PORT, () => {
+    console.log(`PintPoint running on ${APP_BASE_URL}`);
+  });
+}
