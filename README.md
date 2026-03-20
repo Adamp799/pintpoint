@@ -9,7 +9,7 @@ A map of Cambridge pubs with the cost of the cheapest pint at each, plus a sideb
 - **Map** – Leaflet map of Cambridge with a marker for each pub
 - **Pub info** – Click a marker to see the pub name, address, description, and cheapest pint price
 - **Sidebar** – List of all pubs; sort by cheapest first, most expensive first, or name A–Z
-- **Search** – Filter pubs by name, address, or description
+- **Search** – Filter pubs by name, address, or pint
 - **Cheapest callout** – Highlights the single cheapest pint in Cambridge at the top of the sidebar
 
 ## Run locally

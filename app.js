@@ -178,7 +178,7 @@ function applySortAndFilter() {
     ? pubs.filter((p) =>
         p.name.toLowerCase().includes(query) ||
         (p.address && p.address.toLowerCase().includes(query)) ||
-        (p.description && p.description.toLowerCase().includes(query))
+        (p.cheapestPintName && p.cheapestPintName.toLowerCase().includes(query))
       )
     : [...pubs];
 
