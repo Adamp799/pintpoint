@@ -646,6 +646,12 @@ app.get('*', (_req, res) => {
   res.sendFile(path.join(ROOT_DIR, 'index.html'));
 });
 
+app.use((err, _req, res, _next) => {
+  console.error(err);
+  if (res.headersSent) return;
+  res.status(500).json({ error: 'Server error. Please try again.' });
+});
+
 app.listen(PORT, () => {
   console.log(`PintPoint running on ${APP_BASE_URL}`);
 });

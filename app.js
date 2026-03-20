@@ -129,14 +129,16 @@ async function api(path, options = {}) {
     credentials: 'include',
     body: options.body ? JSON.stringify(options.body) : undefined
   });
+  const raw = await response.text();
   let payload = {};
   try {
-    payload = await response.json();
+    payload = raw ? JSON.parse(raw) : {};
   } catch (_err) {
     payload = {};
   }
   if (!response.ok) {
-    throw new Error(payload.error || payload.message || 'Request failed');
+    const fallbackText = raw && !raw.startsWith('<!DOCTYPE') ? raw : '';
+    throw new Error(payload.error || payload.message || fallbackText || `Request failed (${response.status})`);
   }
   return payload;
 }
