@@ -42,6 +42,8 @@ SMTP_PASS=your-password
 SMTP_FROM=no-reply@pintpoint.xyz
 SESSION_SECRET=replace-me
 APP_BASE_URL=http://localhost:3000
+SUPABASE_URL=https://your-project-ref.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
 ```
 
 For local development, copy `.env.local.example` to `.env.local` and fill it:
@@ -52,11 +54,20 @@ cp .env.local.example .env.local
 
 Then restart `npm run dev` so the server picks up your SMTP settings.
 
+## Supabase setup
+
+The app uses Supabase-backed persistence for users, proposals, audit logs, and pubs.
+
+1. Create a Supabase project.
+2. Open SQL editor and run `supabase/schema.sql`.
+3. Set `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` in environment variables (local `.env.local` and Vercel project env).
+4. Deploy/restart.
+
+On first run, the API seeds `pubs` if the `pubs` table is empty.
+
 ## Data
 
-- **`data/pubs.json`** – List of Cambridge pubs with `name`, `address`, `description`, `cheapestPint` (£), `cheapestPintName`, `lastUpdated` (`dd/mm/yyyy`), and `lat`/`lng`.
-- **`data/update-proposals.private.json`** – Pending user-submitted update proposals.
-- **`data/users.private.json`** – Account storage (private).
+- **`data/pubs.json`** – Seed source for Supabase `pubs` table (`name`, `address`, `description`, `cheapestPint`, `cheapestPintName`, `lastUpdated`, `lat`, `lng`).
 
 ## Deploy (GitHub Action)
 

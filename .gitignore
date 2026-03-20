@@ -1,6 +1,3 @@
 .vercel
 node_modules
 .env*.local
-.sessions
-data/*.private.json
-data/*.private.log
