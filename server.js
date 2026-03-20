@@ -652,7 +652,10 @@ app.use((req, res, next) => {
 
 app.use(express.static(ROOT_DIR));
 
-app.get('*', (_req, res) => {
+app.get('*', (req, res) => {
+  if (path.extname(req.path)) {
+    return res.status(404).send('Not found');
+  }
   res.sendFile(path.join(ROOT_DIR, 'index.html'));
 });
 
